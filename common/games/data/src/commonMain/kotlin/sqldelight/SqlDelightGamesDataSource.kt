@@ -1,0 +1,4 @@
+package sqldelight
+
+class SqlDelightGamesDataSource() {
+}
