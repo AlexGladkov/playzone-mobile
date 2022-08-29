@@ -49,5 +49,30 @@ object Dependencies {
 
     object Android {
         const val gradlePlugin = "com.android.tools.build:gradle:7.2.2"
+        const val composeActivity = "androidx.activity:activity-compose:1.5.1"
+
+        object Compose {
+            private const val version = "1.2.0"
+            const val runtime = "androidx.compose.runtime:runtime:$version"
+            const val ui = "androidx.compose.ui:ui:$version"
+            const val material = "androidx.compose.material:material:$version"
+            const val tooling = "androidx.compose.ui:ui-tooling:$version"
+            const val icons = "androidx.compose.material:material-icons-core:$version"
+        }
+    }
+
+    object Other {
+        object ViewModel {
+            private const val version = "0.7.1"
+            const val core = "com.adeo:kviewmodel:$version"
+            const val compose = "com.adeo:kviewmodel-compose:$version"
+            const val odyssey = "com.adeo:kviewmodel-odyssey:$version"
+        }
+
+        object Navigation {
+            private const val version = "1.0.0-beta15"
+            const val core = "io.github.alexgladkov:odyssey-core:$version"
+            const val compose = "io.github.alexgladkov:odyssey-compose:$version"
+        }
     }
 }
