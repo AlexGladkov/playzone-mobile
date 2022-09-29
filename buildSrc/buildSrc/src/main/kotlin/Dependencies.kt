@@ -5,22 +5,22 @@ object Dependencies {
     }
 
     object Kotlin {
-        private const val version = "1.6.10"
+        private const val version = "1.7.10"
         const val gradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$version"
 
         object Serialization {
-            const val gradlePlugin = "org.jetbrains.kotlin:kotlin-serialization:1.5.31"
-            const val serialization = "org.jetbrains.kotlinx:kotlinx-serialization-core:1.3.1"
+            const val gradlePlugin = "org.jetbrains.kotlin:kotlin-serialization:1.6.21"
+            const val serialization = "org.jetbrains.kotlinx:kotlinx-serialization-core:1.3.0"
         }
 
         object Coroutines {
-            private const val version = "1.6.0"
+            private const val version = "1.6.4"
             const val core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$version"
         }
     }
 
     object Compose {
-        private const val version = "1.1.1"
+        private const val version = "1.2.0-beta01"
         const val gradlePlugin = "org.jetbrains.compose:compose-gradle-plugin:$version"
     }
 
