@@ -15,7 +15,6 @@ class LoginViewModel : BaseSharedViewModel<LoginViewState, LoginAction, LoginEve
     private val authRepository: AuthRepository = Inject.instance()
 
     override fun obtainEvent(viewEvent: LoginEvent) {
-        println("Event coming $viewEvent")
         when (viewEvent) {
             is LoginEvent.LoginClick -> sendLogin()
             is LoginEvent.EmailChanged -> obtainEmailChanged(viewEvent.value)
@@ -39,6 +38,8 @@ class LoginViewModel : BaseSharedViewModel<LoginViewState, LoginAction, LoginEve
             } catch (e: Exception) {
                 viewState.copy(isSending = false)
             }
+
+            viewAction = LoginAction.OpenMainFlow
         }
     }
 

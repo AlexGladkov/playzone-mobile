@@ -12,6 +12,15 @@
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
 		4AB56801D9B807F73E1DE06F /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF4857EF73C6667A2DFFE6F /* Pods_iosApp.framework */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
+		9737617B28E8E70400232547 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9737617A28E8E70400232547 /* LoginView.swift */; };
+		9737617E28E8EA7D00232547 /* Color + Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9737617D28E8EA7D00232547 /* Color + Custom.swift */; };
+		9737618028E8EE2B00232547 /* CommonTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9737617F28E8EE2B00232547 /* CommonTextField.swift */; };
+		9737618328E8F89200232547 /* ViewModel + View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9737618228E8F89200232547 /* ViewModel + View.swift */; };
+		9737618728E8F99000232547 /* Flow + Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9737618628E8F99000232547 /* Flow + Publisher.swift */; };
+		9737618928E8FF9900232547 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9737618828E8FF9900232547 /* ActionButton.swift */; };
+		97C828C528EAAEBD00F81123 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C828C428EAAEBD00F81123 /* RegistrationView.swift */; };
+		97C828C828EAB04C00F81123 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C828C728EAB04C00F81123 /* MainView.swift */; };
+		97D232AE28E9737B00E5B8DB /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D232AD28E9737B00E5B8DB /* ForgotPasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,15 @@
 		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9737617A28E8E70400232547 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		9737617D28E8EA7D00232547 /* Color + Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Custom.swift"; sourceTree = "<group>"; };
+		9737617F28E8EE2B00232547 /* CommonTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTextField.swift; sourceTree = "<group>"; };
+		9737618228E8F89200232547 /* ViewModel + View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel + View.swift"; sourceTree = "<group>"; };
+		9737618628E8F99000232547 /* Flow + Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Flow + Publisher.swift"; sourceTree = "<group>"; };
+		9737618828E8FF9900232547 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		97C828C428EAAEBD00F81123 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		97C828C728EAB04C00F81123 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		97D232AD28E9737B00E5B8DB /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		C5158C774ED7C353EA82825A /* Pods-iosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.release.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.release.xcconfig"; sourceTree = "<group>"; };
 		C8595C49980529214EDAD514 /* Pods-iosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.debug.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +93,9 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
+				9737618128E8EE3000232547 /* Views */,
+				9737617C28E8EA7200232547 /* Utils */,
+				9737617828E8E6F700232547 /* Screens */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
 				7555FF82242A565900829871 /* ContentView.swift */,
 				7555FF8C242A565B00829871 /* Info.plist */,
@@ -84,13 +105,74 @@
 			path = iosApp;
 			sourceTree = "<group>";
 		};
+		9737617828E8E6F700232547 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				97C828C628EAB04300F81123 /* Main */,
+				97C828C328EAADDA00F81123 /* Registration */,
+				97D232AC28E9737200E5B8DB /* Forgot */,
+				9737617928E8E6FC00232547 /* Login */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		9737617928E8E6FC00232547 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9737617A28E8E70400232547 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9737617C28E8EA7200232547 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9737617D28E8EA7D00232547 /* Color + Custom.swift */,
+				9737618228E8F89200232547 /* ViewModel + View.swift */,
+				9737618628E8F99000232547 /* Flow + Publisher.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9737618128E8EE3000232547 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9737617F28E8EE2B00232547 /* CommonTextField.swift */,
+				9737618828E8FF9900232547 /* ActionButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		97C828C328EAADDA00F81123 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				97C828C428EAAEBD00F81123 /* RegistrationView.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		97C828C628EAB04300F81123 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				97C828C728EAB04C00F81123 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		97D232AC28E9737200E5B8DB /* Forgot */ = {
+			isa = PBXGroup;
+			children = (
+				97D232AD28E9737B00E5B8DB /* ForgotPasswordView.swift */,
+			);
+			path = Forgot;
+			sourceTree = "<group>";
+		};
 		FE95650239BEA99803C0B9F6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				C8595C49980529214EDAD514 /* Pods-iosApp.debug.xcconfig */,
 				C5158C774ED7C353EA82825A /* Pods-iosApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -190,8 +272,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9737617E28E8EA7D00232547 /* Color + Custom.swift in Sources */,
+				9737617B28E8E70400232547 /* LoginView.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
+				9737618728E8F99000232547 /* Flow + Publisher.swift in Sources */,
+				9737618328E8F89200232547 /* ViewModel + View.swift in Sources */,
+				9737618028E8EE2B00232547 /* CommonTextField.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+				97C828C828EAB04C00F81123 /* MainView.swift in Sources */,
+				97D232AE28E9737B00E5B8DB /* ForgotPasswordView.swift in Sources */,
+				9737618928E8FF9900232547 /* ActionButton.swift in Sources */,
+				97C828C528EAAEBD00F81123 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +414,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"iosApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iosApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,6 +435,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"iosApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iosApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
