@@ -10,3 +10,12 @@
 .cxx
 local.properties
 buildSrc/buildSrc/build/*
+/common/auth/compose/build/
+/common/auth/data/build/
+/common/auth/api/build/
+/common/umbrella-compose/build/
+/common/umbrella-core/build/
+/common/umbrella-ios/
+/common/tournaments/data/build/
+/common/main/presentation/build/
+/common/main/api/build/
