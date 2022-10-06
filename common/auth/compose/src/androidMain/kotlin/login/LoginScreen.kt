@@ -1,5 +1,6 @@
 package login
 
+import NavigationTree
 import android.util.Log
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -21,14 +22,21 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.adeo.kviewmodel.compose.observeAsState
 import com.adeo.kviewmodel.odyssey.StoredViewModel
+import login.models.LoginAction
 import login.models.LoginEvent
+import ru.alexgladkov.odyssey.compose.extensions.present
+import ru.alexgladkov.odyssey.compose.extensions.push
+import ru.alexgladkov.odyssey.compose.local.LocalRootController
+import ru.alexgladkov.odyssey.core.LaunchFlag
 import theme.Theme
 
 @Composable
 fun LoginScreen() {
+    val rootController = LocalRootController.current
 
     StoredViewModel(factory = { LoginViewModel() }) { viewModel ->
         val state = viewModel.viewStates().observeAsState()
+        val action = viewModel.viewActions().observeAsState()
 
         Column(
             modifier = Modifier.padding(30.dp),
@@ -130,5 +138,20 @@ fun LoginScreen() {
                 )
             }
         }
+
+        when (val viewAction = action.value) {
+            is LoginAction.OpenMainFlow -> rootController.findRootController().present(
+                screen = NavigationTree.Main.Mobile.Dashboard.name,
+                launchFlag = LaunchFlag.SingleNewTask
+            )
+            is LoginAction.OpenRegistrationScreen -> rootController.push(
+                screen = NavigationTree.Auth.Register.name
+            )
+            is LoginAction.OpenForgotPasswordScreen -> rootController.push(
+                screen = NavigationTree.Auth.Forgot.name
+            )
+            else -> {}
+        }
     }
+
 }

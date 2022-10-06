@@ -10,4 +10,5 @@ fun RootComposeBuilder.generateGraph() {
     }
 
     authFlow()
+    mainFlow()
 }
