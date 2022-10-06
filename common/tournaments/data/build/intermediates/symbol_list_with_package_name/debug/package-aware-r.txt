@@ -1,1 +1,0 @@
-com.mobiledeveloper.playzone_mobile.tournaments.data

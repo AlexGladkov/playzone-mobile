@@ -1,2 +1,0 @@
-com.mobiledeveloper.playzone_mobile.core
-string androidx_startup

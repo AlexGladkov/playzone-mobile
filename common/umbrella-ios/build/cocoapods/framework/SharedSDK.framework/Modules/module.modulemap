@@ -1,6 +1,0 @@
-framework module SharedSDK {
-  umbrella header "placeholder.h"
-
-  export *
-  module * { export * }
-}

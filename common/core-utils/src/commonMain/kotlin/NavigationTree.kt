@@ -1,5 +1,3 @@
-package navigation
-
 object NavigationTree {
 
     enum class Splash {
@@ -13,10 +11,6 @@ object NavigationTree {
     object Main {
         enum class Mobile {
             Dashboard, Home, Search, Events, Streams
-        }
-
-        enum class Desktop {
-
         }
     }
 }

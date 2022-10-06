@@ -1,2 +1,0 @@
-com.mobiledeveloper.playzone_mobile.auth.presentation
-string androidx_startup
