@@ -1,8 +1,0 @@
-framework module SharedSDK {
-    umbrella header "SharedSDK.h"
-
-    export *
-    module * { export * }
-
-    use Foundation
-}

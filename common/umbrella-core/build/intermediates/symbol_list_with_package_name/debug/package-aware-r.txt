@@ -1,0 +1,2 @@
+com.mobiledeveloper.playzone_mobile.umbrella_core
+string androidx_startup
