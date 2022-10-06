@@ -68,7 +68,7 @@ fun LoginScreen() {
             Spacer(modifier = Modifier.height(24.dp))
 
             CommonTextField(
-                value = state.value.email,
+                value = state.value.password,
                 placeholder = "Your Password",
                 isSending = state.value.isSending,
                 isTextHidden = state.value.passwordHidden,

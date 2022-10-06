@@ -27,7 +27,7 @@ fun CreateGameScreen() {
         val viewState = viewModel.viewStates().observeAsState().value
         val viewAction = viewModel.viewActions().observeAsState().value
 
-        Column {
+        Column(modifier = Modifier.padding(16.dp)) {
             Text(
                 text = viewState.title.ifBlank { "Add Game" },
                 color = Theme.colors.secondaryTextColor,
