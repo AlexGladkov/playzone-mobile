@@ -29,4 +29,8 @@ class AuthRepositoryImpl(
     override fun isUserLoggedIn(): Boolean {
         return localDataSource.fetchToken().isNotBlank()
     }
+
+    override fun loadToken(): String {
+        return localDataSource.fetchToken()
+    }
 }

@@ -19,14 +19,24 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.adeo.kviewmodel.compose.observeAsState
 import com.adeo.kviewmodel.odyssey.StoredViewModel
+import login.models.LoginAction
 import login.models.LoginEvent
+import navigation.NavigationTree
+import ru.alexgladkov.odyssey.compose.extensions.present
+import ru.alexgladkov.odyssey.compose.extensions.push
+import ru.alexgladkov.odyssey.compose.local.LocalRootController
+import ru.alexgladkov.odyssey.core.LaunchFlag
 import theme.Theme
+import widgets.ActionButton
+import widgets.CommonTextField
 
 @Composable
 fun LoginScreen() {
+    val rootController = LocalRootController.current
 
     StoredViewModel(factory = { LoginViewModel() }) { viewModel ->
         val state = viewModel.viewStates().observeAsState()
+        val action = viewModel.viewActions().observeAsState()
 
         Column(
             modifier = Modifier.padding(30.dp),
@@ -47,48 +57,21 @@ fun LoginScreen() {
 
             Spacer(modifier = Modifier.height(50.dp))
 
-            TextField(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(56.dp),
+            CommonTextField(
                 value = state.value.email,
-                enabled = !state.value.isSending,
-                colors = TextFieldDefaults.textFieldColors(
-                    backgroundColor = Color(0xFF1F2430),
-                    textColor = Color(0xFF696C75),
-                    cursorColor = Theme.colors.highlightTextColor,
-                    focusedIndicatorColor = Color.Transparent,
-                    unfocusedIndicatorColor = Color.Transparent
-                ),
-                placeholder = { Text("Your login", color = Theme.colors.hintTextColor) },
-                shape = RoundedCornerShape(10.dp),
-                onValueChange = {
-                    viewModel.obtainEvent(LoginEvent.EmailChanged(it))
-                })
+                placeholder = "Your Login",
+                isSending = state.value.isSending
+            ) {
+                viewModel.obtainEvent(LoginEvent.EmailChanged(it))
+            }
 
             Spacer(modifier = Modifier.height(24.dp))
 
-            TextField(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(56.dp),
-                value = state.value.password,
-                enabled = !state.value.isSending,
-                colors = TextFieldDefaults.textFieldColors(
-                    backgroundColor = Color(0xFF1F2430),
-                    textColor = Color(0xFF696C75),
-                    cursorColor = Theme.colors.highlightTextColor,
-                    focusedIndicatorColor = Color.Transparent,
-                    unfocusedIndicatorColor = Color.Transparent
-                ),
-                visualTransformation = if (state.value.passwordHidden) {
-                    PasswordVisualTransformation()
-                } else {
-                    VisualTransformation.None
-                },
-                placeholder = {
-                    Text("Your password", color = Theme.colors.hintTextColor)
-                },
+            CommonTextField(
+                value = state.value.email,
+                placeholder = "Your Password",
+                isSending = state.value.isSending,
+                isTextHidden = state.value.passwordHidden,
                 trailingIcon = {
                     Icon(
                         modifier = Modifier.clickable {
@@ -102,31 +85,27 @@ fun LoginScreen() {
                         contentDescription = "Password hidden",
                         tint = Theme.colors.hintTextColor
                     )
-                },
-                shape = RoundedCornerShape(10.dp),
-                onValueChange = {
-                    viewModel.obtainEvent(LoginEvent.PasswordChanged(it))
-                })
+                }
+            ) {
+                viewModel.obtainEvent(LoginEvent.PasswordChanged(it))
+            }
 
             Spacer(modifier = Modifier.height(84.dp))
 
-            Button(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(56.dp),
-                colors = ButtonDefaults.buttonColors(
-                    backgroundColor = Theme.colors.primaryAction
-                ),
-                enabled = !state.value.isSending,
-                shape = RoundedCornerShape(10.dp),
-                onClick = {
-                    viewModel.obtainEvent(LoginEvent.LoginClick)
-                }) {
-                Text(
-                    "Login Now", color = Theme.colors.primaryTextColor,
-                    fontSize = 16.sp, fontWeight = FontWeight.Bold
-                )
+            ActionButton(title = "Login Now", isSending = state.value.isSending) {
+                viewModel.obtainEvent(LoginEvent.LoginClick)
             }
+        }
+
+        when (action.value) {
+            is LoginAction.OpenMainFlow -> rootController.findRootController().present(
+                screen = NavigationTree.Main.Dashboard.name,
+                launchFlag = LaunchFlag.SingleNewTask
+            )
+
+            is LoginAction.OpenRegistrationScreen -> rootController.push(NavigationTree.Auth.Register.name)
+            is LoginAction.OpenForgotPasswordScreen -> rootController.push(NavigationTree.Auth.Forgot.name)
+            null -> { }
         }
     }
 }

@@ -9,29 +9,29 @@ import search.SearchScreen
 import streams.StreamsScreen
 
 fun RootComposeBuilder.mainFlow() {
-    bottomNavigation(name = NavigationTree.Main.Mobile.Dashboard.name,
+    bottomNavigation(name = NavigationTree.Main.Dashboard.name,
         tabsNavModel = BottomConfiguration()
     ) {
         tab(HomeTab()) {
-            screen(name = NavigationTree.Main.Mobile.Home.name) {
+            screen(name = NavigationTree.Main.Home.name) {
                 HomeScreen()
             }
         }
 
         tab(SearchTab()) {
-            screen(name = NavigationTree.Main.Mobile.Search.name) {
+            screen(name = NavigationTree.Main.Search.name) {
                 SearchScreen()
             }
         }
 
         tab(EventsTab()) {
-            screen(name = NavigationTree.Main.Mobile.Events.name) {
+            screen(name = NavigationTree.Main.Events.name) {
                 EventsScreen()
             }
         }
 
         tab(StreamsTab()) {
-            screen(name = NavigationTree.Main.Mobile.Streams.name) {
+            screen(name = NavigationTree.Main.Streams.name) {
                 StreamsScreen()
             }
         }

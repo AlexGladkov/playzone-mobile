@@ -10,7 +10,6 @@ import ru.alexgladkov.odyssey.compose.base.Navigator
 import ru.alexgladkov.odyssey.compose.local.LocalRootController
 import ru.alexgladkov.odyssey.compose.navigation.RootComposeBuilder
 import ru.alexgladkov.odyssey.compose.navigation.modal_navigation.ModalNavigator
-import ru.alexgladkov.odyssey.compose.navigation.modal_navigation.ModalSheetNavigator
 import theme.AppTheme
 import theme.Theme
 import javax.swing.JFrame

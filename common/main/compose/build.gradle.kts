@@ -13,6 +13,8 @@ kotlin {
 
                 implementation(Dependencies.Other.Navigation.compose)
                 implementation(Dependencies.Other.Navigation.core)
+                implementation(Dependencies.Other.ViewModel.compose)
+                implementation(Dependencies.Other.ViewModel.core)
             }
         }
     }

@@ -10,13 +10,11 @@ object NavigationTree {
         AuthFlow, Login, Register, Forgot
     }
 
-    object Main {
-        enum class Mobile {
-            Dashboard, Home, Search, Events, Streams
-        }
+    enum class Main {
+        Dashboard, Home, Search, Events, Streams
+    }
 
-        enum class Desktop {
-
-        }
+    enum class Desktop {
+        Dashboard, Games, Events, Create
     }
 }

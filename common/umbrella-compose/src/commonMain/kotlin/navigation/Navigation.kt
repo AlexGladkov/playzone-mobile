@@ -1,6 +1,7 @@
 package navigation
 
 import SplashScreen
+import navigation.admin.mainAdminFlow
 import ru.alexgladkov.odyssey.compose.extensions.screen
 import ru.alexgladkov.odyssey.compose.navigation.RootComposeBuilder
 
@@ -10,4 +11,16 @@ fun RootComposeBuilder.generateGraph(source: NavigationSource) {
     }
 
     authFlow()
+
+    when (source) {
+        NavigationSource.Android -> {
+            mainFlow()
+        }
+
+        NavigationSource.Desktop -> {
+            mainAdminFlow()
+        }
+
+        NavigationSource.IOS -> {}
+    }
 }
