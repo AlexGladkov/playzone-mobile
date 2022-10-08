@@ -1,8 +1,6 @@
 framework module SharedSDK {
-    umbrella header "SharedSDK.h"
+  umbrella header "placeholder.h"
 
-    export *
-    module * { export * }
-
-    use Foundation
+  export *
+  module * { export * }
 }

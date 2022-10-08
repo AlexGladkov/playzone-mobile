@@ -6,7 +6,7 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class SSDKKviewmodelKViewModelCompanion, SSDKKviewmodelKViewModel, SSDKKviewmodelWrappedSharedFlow<T>, SSDKKviewmodelWrappedStateFlow<T>, SSDKKviewmodelBaseSharedViewModel<State, Action, Event>, SSDKLoginEvent, SSDKLoginViewState, SSDKLoginAction, SSDKLoginActionOpenForgotPasswordScreen, SSDKLoginActionOpenMainFlow, SSDKLoginActionOpenRegistrationScreen, SSDKLoginEventEmailChanged, SSDKLoginEventForgotClick, SSDKLoginEventLoginClick, SSDKLoginEventPasswordChanged, SSDKLoginEventPasswordShowClick, SSDKLoginEventRegistrationClick, SSDKPlatformSDK, SSDKPlatformConfiguration, SSDKInject, SSDKToken, SSDKTokenCompanion, SSDKGame, SSDKKodein_diDIModule, SSDKKodein_typeTypeToken<T>, SSDKKodein_diDIContext<C>, SSDKKotlinThrowable, SSDKKotlinArray<T>, SSDKKotlinException, SSDKKotlinRuntimeException, SSDKKotlinIllegalStateException, SSDKKodein_typeTypeTokenCompanion, SSDKKodein_diDIContextCompanion, SSDKKodein_diDIKey<__contravariant C, __contravariant A, __covariant T>, SSDKKotlinUnit, SSDKKodein_diDITrigger, SSDKKotlinx_serialization_coreSerializersModule, SSDKKotlinx_serialization_coreSerialKind, SSDKKotlinNothing, SSDKKodein_diDIDefinition<C, A, T>, SSDKKotlinTriple<__covariant A, __covariant B, __covariant C>, SSDKKodein_diSearchSpecs, SSDKKodein_diScopeRegistry, SSDKKodein_diReferenceLocal<__covariant T, __covariant R>, SSDKKodein_diDIDefining<C, A, T>, SSDKKodein_diReferenceLocalCompanion;
+@class SSDKKviewmodelKViewModelCompanion, SSDKKviewmodelKViewModel, SSDKKviewmodelWrappedSharedFlow<T>, SSDKKviewmodelWrappedStateFlow<T>, SSDKKviewmodelBaseSharedViewModel<State, Action, Event>, SSDKLoginEvent, SSDKLoginViewState, SSDKLoginAction, SSDKLoginActionOpenForgotPasswordScreen, SSDKLoginActionOpenMainFlow, SSDKLoginActionOpenRegistrationScreen, SSDKLoginEventEmailChanged, SSDKLoginEventForgotClick, SSDKLoginEventLoginClick, SSDKLoginEventPasswordChanged, SSDKLoginEventPasswordShowClick, SSDKLoginEventRegistrationClick, SSDKSearchEvent, SSDKSearchViewState, SSDKSearchAction, SSDKSearchActionShowGameDetail, SSDKSearchEventGameClicked, SSDKSearchEventQueryChanged, SSDKGame, SSDKHomeEvent, SSDKHomeViewState, SSDKHomeAction, SSDKHomeActionShowUserProfile, SSDKHomeEventUserProfileClicked, SSDKPlatformSDK, SSDKPlatformConfiguration, SSDKInject, SSDKToken, SSDKTokenCompanion, SSDKKodein_diDIModule, SSDKKodein_typeTypeToken<T>, SSDKKodein_diDIContext<C>, SSDKKotlinThrowable, SSDKKotlinArray<T>, SSDKKotlinException, SSDKKotlinRuntimeException, SSDKKotlinIllegalStateException, SSDKKodein_typeTypeTokenCompanion, SSDKKodein_diDIContextCompanion, SSDKKodein_diDIKey<__contravariant C, __contravariant A, __covariant T>, SSDKKotlinUnit, SSDKKodein_diDITrigger, SSDKKotlinx_serialization_coreSerializersModule, SSDKKotlinx_serialization_coreSerialKind, SSDKKotlinNothing, SSDKKodein_diDIDefinition<C, A, T>, SSDKKotlinTriple<__covariant A, __covariant B, __covariant C>, SSDKKodein_diSearchSpecs, SSDKKodein_diScopeRegistry, SSDKKodein_diReferenceLocal<__covariant T, __covariant R>, SSDKKodein_diDIDefining<C, A, T>, SSDKKodein_diReferenceLocalCompanion;
 
 @protocol SSDKKotlinx_coroutines_coreCoroutineScope, SSDKKotlinSuspendFunction1, SSDKKodein_diDirectDI, SSDKKotlinx_serialization_coreKSerializer, SSDKKotlinCoroutineContext, SSDKKotlinx_coroutines_coreFlowCollector, SSDKKotlinx_coroutines_coreFlow, SSDKKotlinx_coroutines_coreSharedFlow, SSDKKviewmodelCloseable, SSDKKotlinx_coroutines_coreStateFlow, SSDKKotlinFunction, SSDKKodein_diDIContainer, SSDKKodein_diDI, SSDKKodein_diDirectDIAware, SSDKKodein_diDirectDIBase, SSDKKotlinx_serialization_coreEncoder, SSDKKotlinx_serialization_coreSerialDescriptor, SSDKKotlinx_serialization_coreSerializationStrategy, SSDKKotlinx_serialization_coreDecoder, SSDKKotlinx_serialization_coreDeserializationStrategy, SSDKKodein_diDIBuilder, SSDKKotlinCoroutineContextElement, SSDKKotlinCoroutineContextKey, SSDKKodein_diReference, SSDKKodein_diDITree, SSDKKodein_diDIAware, SSDKKotlinIterator, SSDKKotlinx_serialization_coreCompositeEncoder, SSDKKotlinAnnotation, SSDKKotlinx_serialization_coreCompositeDecoder, SSDKKodein_diDIBuilderDirectBinder, SSDKKodein_diDIBuilderTypeBinder, SSDKKodein_diContextTranslator, SSDKKodein_diDIBuilderConstantBinder, SSDKKodein_diDIContainerBuilder, SSDKKodein_diDIBindBuilder, SSDKKodein_diDIBindBuilderWithContext, SSDKKodein_diScope, SSDKKodein_diDIBindBuilderWithScope, SSDKKodein_diReferenceMaker, SSDKKodein_diExternalSource, SSDKKotlinLazy, SSDKKotlinx_serialization_coreSerializersModuleCollector, SSDKKotlinKClass, SSDKKodein_diDIBinding, SSDKKodein_diBindingDI, SSDKKotlinKDeclarationContainer, SSDKKotlinKAnnotatedElement, SSDKKotlinKClassifier, SSDKKodein_diDIBindingCopier, SSDKKodein_diBinding, SSDKKodein_diScopeCloseable, SSDKKodein_diWithContext;
 
@@ -291,6 +291,118 @@ __attribute__((swift_name("LoginViewState")))
 @end;
 
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SearchViewModel")))
+@interface SSDKSearchViewModel : SSDKKviewmodelBaseSharedViewModel<SSDKSearchViewState *, SSDKSearchAction *, SSDKSearchEvent *>
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (instancetype)initWithInitialState:(id)initialState __attribute__((swift_name("init(initialState:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (void)obtainEventViewEvent:(SSDKSearchEvent *)viewEvent __attribute__((swift_name("obtainEvent(viewEvent:)")));
+@end;
+
+__attribute__((swift_name("SearchAction")))
+@interface SSDKSearchAction : SSDKBase
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SearchAction.ShowGameDetail")))
+@interface SSDKSearchActionShowGameDetail : SSDKSearchAction
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)showGameDetail __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SSDKSearchActionShowGameDetail *shared __attribute__((swift_name("shared")));
+@end;
+
+__attribute__((swift_name("SearchEvent")))
+@interface SSDKSearchEvent : SSDKBase
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SearchEvent.GameClicked")))
+@interface SSDKSearchEventGameClicked : SSDKSearchEvent
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)gameClicked __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SSDKSearchEventGameClicked *shared __attribute__((swift_name("shared")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SearchEvent.QueryChanged")))
+@interface SSDKSearchEventQueryChanged : SSDKSearchEvent
+- (instancetype)initWithQuery:(NSString *)query __attribute__((swift_name("init(query:)"))) __attribute__((objc_designated_initializer));
+- (NSString *)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (SSDKSearchEventQueryChanged *)doCopyQuery:(NSString *)query __attribute__((swift_name("doCopy(query:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *query __attribute__((swift_name("query")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SearchViewState")))
+@interface SSDKSearchViewState : SSDKBase
+- (instancetype)initWithQuery:(NSString *)query games:(NSArray<SSDKGame *> *)games __attribute__((swift_name("init(query:games:)"))) __attribute__((objc_designated_initializer));
+- (NSString *)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSArray<SSDKGame *> *)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
+- (SSDKSearchViewState *)doCopyQuery:(NSString *)query games:(NSArray<SSDKGame *> *)games __attribute__((swift_name("doCopy(query:games:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSArray<SSDKGame *> *games __attribute__((swift_name("games")));
+@property (readonly) NSString *query __attribute__((swift_name("query")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("HomeViewModel")))
+@interface SSDKHomeViewModel : SSDKKviewmodelBaseSharedViewModel<SSDKHomeViewState *, SSDKHomeAction *, SSDKHomeEvent *>
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (instancetype)initWithInitialState:(id)initialState __attribute__((swift_name("init(initialState:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (void)obtainEventViewEvent:(SSDKHomeEvent *)viewEvent __attribute__((swift_name("obtainEvent(viewEvent:)")));
+@end;
+
+__attribute__((swift_name("HomeAction")))
+@interface SSDKHomeAction : SSDKBase
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("HomeAction.ShowUserProfile")))
+@interface SSDKHomeActionShowUserProfile : SSDKHomeAction
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)showUserProfile __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SSDKHomeActionShowUserProfile *shared __attribute__((swift_name("shared")));
+@end;
+
+__attribute__((swift_name("HomeEvent")))
+@interface SSDKHomeEvent : SSDKBase
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("HomeEvent.UserProfileClicked")))
+@interface SSDKHomeEventUserProfileClicked : SSDKHomeEvent
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)userProfileClicked __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SSDKHomeEventUserProfileClicked *shared __attribute__((swift_name("shared")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("HomeViewState")))
+@interface SSDKHomeViewState : SSDKBase
+- (instancetype)initWithUsername:(NSString *)username avatarUrl:(NSString *)avatarUrl status:(NSString *)status __attribute__((swift_name("init(username:avatarUrl:status:)"))) __attribute__((objc_designated_initializer));
+- (NSString *)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString *)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString *)component3 __attribute__((swift_name("component3()"))) __attribute__((deprecated("use corresponding property instead")));
+- (SSDKHomeViewState *)doCopyUsername:(NSString *)username avatarUrl:(NSString *)avatarUrl status:(NSString *)status __attribute__((swift_name("doCopy(username:avatarUrl:status:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *avatarUrl __attribute__((swift_name("avatarUrl")));
+@property (readonly) NSString *status __attribute__((swift_name("status")));
+@property (readonly) NSString *username __attribute__((swift_name("username")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("PlatformSDK")))
 @interface SSDKPlatformSDK : SSDKBase
 + (instancetype)alloc __attribute__((unavailable));
@@ -322,6 +434,7 @@ __attribute__((swift_name("Inject")))
 __attribute__((swift_name("AuthRepository")))
 @protocol SSDKAuthRepository
 @required
+- (BOOL)isUserLoggedIn __attribute__((swift_name("isUserLoggedIn()")));
 
 /**
  @note This method converts instances of CancellationException to errors.

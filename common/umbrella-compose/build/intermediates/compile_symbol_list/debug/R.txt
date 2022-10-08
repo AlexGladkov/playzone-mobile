@@ -617,6 +617,7 @@ int drawable btn_radio_off_mtrl 0x0
 int drawable btn_radio_off_to_on_mtrl_animation 0x0
 int drawable btn_radio_on_mtrl 0x0
 int drawable btn_radio_on_to_off_mtrl_animation 0x0
+int drawable ic_100tb 0x0
 int drawable ic_user_avatar 0x0
 int drawable notification_action_background 0x0
 int drawable notification_bg 0x0
@@ -694,6 +695,7 @@ int id buttonPanel 0x0
 int id checkbox 0x0
 int id checked 0x0
 int id chronometer 0x0
+int id coil_request_manager 0x0
 int id compose_view_saveable_id_tag 0x0
 int id consume_window_insets_tag 0x0
 int id content 0x0
@@ -871,6 +873,7 @@ int string abc_searchview_description_voice 0x0
 int string abc_shareactionprovider_share_with 0x0
 int string abc_shareactionprovider_share_with_application 0x0
 int string abc_toolbar_collapse_description 0x0
+int string androidx_startup 0x0
 int string close_drawer 0x0
 int string close_sheet 0x0
 int string default_error_message 0x0

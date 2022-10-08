@@ -618,6 +618,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable ic_100tb
 drawable ic_user_avatar
 drawable notification_action_background
 drawable notification_bg
@@ -695,6 +696,7 @@ id buttonPanel
 id checkbox
 id checked
 id chronometer
+id coil_request_manager
 id compose_view_saveable_id_tag
 id consume_window_insets_tag
 id content
@@ -872,6 +874,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string androidx_startup
 string close_drawer
 string close_sheet
 string default_error_message

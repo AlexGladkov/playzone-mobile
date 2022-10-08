@@ -869,6 +869,7 @@ int string abc_searchview_description_voice 0x0
 int string abc_shareactionprovider_share_with 0x0
 int string abc_shareactionprovider_share_with_application 0x0
 int string abc_toolbar_collapse_description 0x0
+int string androidx_startup 0x0
 int string close_drawer 0x0
 int string close_sheet 0x0
 int string default_error_message 0x0

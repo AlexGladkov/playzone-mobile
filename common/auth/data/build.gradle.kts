@@ -12,6 +12,7 @@ kotlin {
                 implementation(project(":common:core"))
 
                 implementation(Dependencies.Kodein.core)
+                implementation(Dependencies.Settings.core)
             }
         }
     }

@@ -33,6 +33,7 @@ dependencies {
     implementation(project(":common:core"))
     implementation(project(":common:games:api"))
     implementation(project(":common:umbrella-compose"))
+    implementation(project(":common:umbrella-core"))
 
     implementation(Dependencies.Android.Compose.runtime)
     implementation(Dependencies.Android.Compose.ui)

@@ -25,6 +25,8 @@
 		974E45A228F1811000D2E524 /* SearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974E45A128F1811000D2E524 /* SearchScreen.swift */; };
 		974E45A428F1811700D2E524 /* EventsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974E45A328F1811700D2E524 /* EventsScreen.swift */; };
 		974E45A628F1811F00D2E524 /* VideosScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974E45A528F1811F00D2E524 /* VideosScreen.swift */; };
+		974E45A828F1895200D2E524 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974E45A728F1895200D2E524 /* HomeView.swift */; };
+		974E45AA28F18B9E00D2E524 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974E45A928F18B9E00D2E524 /* SearchView.swift */; };
 		97FBE6A528F16D8000EA6A9C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FBE6A428F16D8000EA6A9C /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		974E45A128F1811000D2E524 /* SearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreen.swift; sourceTree = "<group>"; };
 		974E45A328F1811700D2E524 /* EventsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsScreen.swift; sourceTree = "<group>"; };
 		974E45A528F1811F00D2E524 /* VideosScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosScreen.swift; sourceTree = "<group>"; };
+		974E45A728F1895200D2E524 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		974E45A928F18B9E00D2E524 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		97FBE6A428F16D8000EA6A9C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C5158C774ED7C353EA82825A /* Pods-iosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.release.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.release.xcconfig"; sourceTree = "<group>"; };
 		C8595C49980529214EDAD514 /* Pods-iosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.debug.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				974E459F28F1810800D2E524 /* HomeScreen.swift */,
+				974E45A728F1895200D2E524 /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				974E45A128F1811000D2E524 /* SearchScreen.swift */,
+				974E45A928F18B9E00D2E524 /* SearchView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -324,10 +330,12 @@
 				97FBE6A528F16D8000EA6A9C /* LoginView.swift in Sources */,
 				974E45A228F1811000D2E524 /* SearchScreen.swift in Sources */,
 				974E45A428F1811700D2E524 /* EventsScreen.swift in Sources */,
+				974E45A828F1895200D2E524 /* HomeView.swift in Sources */,
 				974E459428F1806C00D2E524 /* RegistrationScreen.swift in Sources */,
 				974E459128F17DDF00D2E524 /* LoginScreen.swift in Sources */,
 				974E45A628F1811F00D2E524 /* VideosScreen.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
+				974E45AA28F18B9E00D2E524 /* SearchView.swift in Sources */,
 				974E45A028F1810800D2E524 /* HomeScreen.swift in Sources */,
 				974E458F28F17B5E00D2E524 /* ViewModel + View.swift in Sources */,
 				974E458D28F17A5E00D2E524 /* Flow + Publisher.swift in Sources */,

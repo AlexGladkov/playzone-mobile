@@ -18,6 +18,9 @@ kotlin {
                 implementation(Dependencies.Ktor.kotlin_json)
                 implementation(Dependencies.Ktor.logging)
 
+                implementation(Dependencies.Settings.core)
+                implementation(Dependencies.Settings.noargs)
+
                 api(Dependencies.Kodein.core)
 
 //                api(Dependencies.SqlDelight.core)

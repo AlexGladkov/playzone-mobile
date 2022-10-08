@@ -7,10 +7,18 @@
 //
 
 import SwiftUI
+import SharedSDK
 
 struct SearchScreen: View {
+    
+    private let viewModel = SearchViewModel()
+    
     var body: some View {
-        Text("Hello, World!")
+        ObservingView(statePublisher: statePublisher(viewModel.viewStates())) { viewState in
+            SearchView(viewState: viewState) { event in
+                viewModel.obtainEvent(viewEvent: event)
+            }
+        }
     }
 }
 
