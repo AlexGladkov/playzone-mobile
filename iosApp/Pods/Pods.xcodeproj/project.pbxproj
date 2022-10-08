@@ -9,9 +9,9 @@
 /* Begin PBXAggregateTarget section */
 		A9F8E711AAB604D43446974F6A3F260B /* umbrella_ios */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = DC2A6B4E2A7CA8FB52C1C301B9C10469 /* Build configuration list for PBXAggregateTarget "umbrella_ios" */;
+			buildConfigurationList = D1982A0964A3E9A1723641A674C374D7 /* Build configuration list for PBXAggregateTarget "umbrella_ios" */;
 			buildPhases = (
-				6903C0C154DD2ED506637CE62BCF234B /* [CP-User] Build umbrella_ios */,
+				950B69E92C2D0DF41C7B8BEB79037CF2 /* [CP-User] Build umbrella_ios */,
 			);
 			dependencies = (
 			);
@@ -241,7 +241,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6903C0C154DD2ED506637CE62BCF234B /* [CP-User] Build umbrella_ios */ = {
+		950B69E92C2D0DF41C7B8BEB79037CF2 /* [CP-User] Build umbrella_ios */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -249,7 +249,7 @@
 			name = "[CP-User] Build umbrella_ios";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "                if [ \"YES\" = \"$COCOAPODS_SKIP_KOTLIN_BUILD\" ]; then\n                  echo \"Skipping Gradle build task invocation due to COCOAPODS_SKIP_KOTLIN_BUILD environment variable set to \"YES\"\"\n                  exit 0\n                fi\n                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/../../gradlew\" -p \"$REPO_ROOT\" $KOTLIN_PROJECT_PATH:syncFramework                     -Pkotlin.native.cocoapods.platform=$PLATFORM_NAME                     -Pkotlin.native.cocoapods.archs=\"$ARCHS\"                     -Pkotlin.native.cocoapods.configuration=$CONFIGURATION\n";
+			shellScript = "                if [ \"YES\" = \"$COCOAPODS_SKIP_KOTLIN_BUILD\" ]; then\n                  echo \"Skipping Gradle build task invocation due to COCOAPODS_SKIP_KOTLIN_BUILD environment variable set to \"YES\"\"\n                  exit 0\n                fi\n                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/../../gradlew\" -p \"$REPO_ROOT\" $KOTLIN_PROJECT_PATH:syncFramework                     -Pkotlin.native.cocoapods.platform=$PLATFORM_NAME                     -Pkotlin.native.cocoapods.archs=\"$ARCHS\"                     -Pkotlin.native.cocoapods.configuration=\"$CONFIGURATION\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -274,7 +274,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		277BD62D4129BBEDD15383C29CCD7C4B /* Release */ = {
+		5443E279CE1BA2EE0EF3C41141FA45D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84C38C392F6FC128A82421F31190E4F2 /* umbrella_ios.release.xcconfig */;
 			buildSettings = {
@@ -391,23 +391,6 @@
 			};
 			name = Debug;
 		};
-		9E8671B38D76BD0D8DFFD1566BC845D8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BA29AE1E884A8FFC20224582F78F7F2 /* umbrella_ios.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		A0374B8CF9A7D6A45F6D116D698D1C19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -512,6 +495,23 @@
 			};
 			name = Release;
 		};
+		C5BC9AE5A1D015E8A8B5F05F1036823F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BA29AE1E884A8FFC20224582F78F7F2 /* umbrella_ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -533,11 +533,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC2A6B4E2A7CA8FB52C1C301B9C10469 /* Build configuration list for PBXAggregateTarget "umbrella_ios" */ = {
+		D1982A0964A3E9A1723641A674C374D7 /* Build configuration list for PBXAggregateTarget "umbrella_ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E8671B38D76BD0D8DFFD1566BC845D8 /* Debug */,
-				277BD62D4129BBEDD15383C29CCD7C4B /* Release */,
+				C5BC9AE5A1D015E8A8B5F05F1036823F /* Debug */,
+				5443E279CE1BA2EE0EF3C41141FA45D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -3,28 +3,26 @@
   "version": "0.0.1",
   "homepage": "https://google.com",
   "source": {
-    "git": "Not Published",
-    "tag": "Cocoapods/umbrella_ios/0.0.1"
+    "http": ""
   },
   "authors": "",
   "license": "",
   "summary": "PlayZone iOS SDK",
   "vendored_frameworks": "build/cocoapods/framework/SharedSDK.framework",
   "libraries": "c++",
-  "module_name": "umbrella_ios_umbrella",
   "platforms": {
     "ios": "14.0"
   },
   "pod_target_xcconfig": {
     "KOTLIN_PROJECT_PATH": ":common:umbrella-ios",
-    "PRODUCT_MODULE_NAME": "umbrella_ios"
+    "PRODUCT_MODULE_NAME": "SharedSDK"
   },
   "script_phases": [
     {
       "name": "Build umbrella_ios",
       "execution_position": "before_compile",
       "shell_path": "/bin/sh",
-      "script": "                if [ \"YES\" = \"$COCOAPODS_SKIP_KOTLIN_BUILD\" ]; then\n                  echo \"Skipping Gradle build task invocation due to COCOAPODS_SKIP_KOTLIN_BUILD environment variable set to \"YES\"\"\n                  exit 0\n                fi\n                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/../../gradlew\" -p \"$REPO_ROOT\" $KOTLIN_PROJECT_PATH:syncFramework                     -Pkotlin.native.cocoapods.platform=$PLATFORM_NAME                     -Pkotlin.native.cocoapods.archs=\"$ARCHS\"                     -Pkotlin.native.cocoapods.configuration=$CONFIGURATION\n"
+      "script": "                if [ \"YES\" = \"$COCOAPODS_SKIP_KOTLIN_BUILD\" ]; then\n                  echo \"Skipping Gradle build task invocation due to COCOAPODS_SKIP_KOTLIN_BUILD environment variable set to \"YES\"\"\n                  exit 0\n                fi\n                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/../../gradlew\" -p \"$REPO_ROOT\" $KOTLIN_PROJECT_PATH:syncFramework                     -Pkotlin.native.cocoapods.platform=$PLATFORM_NAME                     -Pkotlin.native.cocoapods.archs=\"$ARCHS\"                     -Pkotlin.native.cocoapods.configuration=\"$CONFIGURATION\"\n"
     }
   ]
 }
