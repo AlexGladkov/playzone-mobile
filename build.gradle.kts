@@ -1,22 +1,7 @@
-buildscript {
-    repositories {
-        gradlePluginPortal()
-        google()
-        mavenCentral()
-    }
-    dependencies {
-        classpath(Dependencies.Kotlin.gradlePlugin)
-        classpath("com.android.tools.build:gradle:7.2.1")
-    }
-}
-
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
-
-tasks.register("clean", Delete::class) {
-    delete(rootProject.buildDir)
+plugins {
+    alias(libs.plugins.kotlin).apply(false)
+    alias(libs.plugins.android).apply(false)
+    alias(libs.plugins.compose).apply(false)
+//    alias(libs.plugins.serialization).apply(false)
+//    alias(libs.plugins.libres).apply(false)
 }
