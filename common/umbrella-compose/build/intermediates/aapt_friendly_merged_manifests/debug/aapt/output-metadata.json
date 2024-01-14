@@ -4,7 +4,7 @@
     "type": "AAPT_FRIENDLY_MERGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "com.mobiledeveloper.playzone_mobile.umbrella_compose",
+  "applicationId": "com.mobiledeveloper.playzone.mobile.umbrella.compose",
   "variantName": "debug",
   "elements": [
     {

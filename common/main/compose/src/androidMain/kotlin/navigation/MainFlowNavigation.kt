@@ -1,6 +1,7 @@
 package navigation
 
 import androidx.compose.material.Text
+import androidx.compose.runtime.Composable
 import home.HomeScreen
 import navigation.tabs.*
 import ru.alexgladkov.odyssey.compose.extensions.bottomNavigation

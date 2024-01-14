@@ -1,20 +1,13 @@
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 
 plugins {
-    alias(libs.plugins.kotlin)
-    alias(libs.plugins.compose)
-    alias(libs.plugins.android)
+    id(libs.plugins.android.get().pluginId)
+    id(libs.plugins.kotlin.get().pluginId)
+    id(libs.plugins.compose.get().pluginId)
 }
 
 kotlin {
-    androidTarget {
-        compilations.all {
-            kotlinOptions {
-                jvmTarget = "17"
-            }
-        }
-    }
-
+    androidTarget()
     jvm()
 
     js {
@@ -36,7 +29,10 @@ kotlin {
     sourceSets {
 
         commonMain.dependencies {
-
+            implementation(project(":common:core"))
+            implementation(project(":common:games:api"))
+            implementation(project(":common:umbrella-compose"))
+            implementation(project(":common:umbrella-core"))
         }
 
         androidMain.dependencies {

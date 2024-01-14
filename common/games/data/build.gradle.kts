@@ -1,7 +1,6 @@
 plugins {
-    id("multiplatform-setup")
-    id("android-setup")
-    kotlin("plugin.serialization")
+    id("multiplatform")
+    id(libs.plugins.kotlin.get().pluginId)
 }
 
 kotlin {
@@ -13,4 +12,8 @@ kotlin {
             }
         }
     }
+}
+
+android {
+    namespace = "com.mobiledeveloper.playzone.mobile.games.data"
 }

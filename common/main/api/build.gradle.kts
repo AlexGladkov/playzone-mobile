@@ -1,15 +1,18 @@
 plugins {
-    id("multiplatform-setup")
-    id("android-setup")
-    kotlin("plugin.serialization")
+    id("multiplatform")
+    id(libs.plugins.kotlin.get().pluginId)
 }
 
 kotlin {
     sourceSets {
         commonMain {
             dependencies {
-                implementation(Dependencies.Kotlin.Serialization.serialization)
+//                implementation()
             }
         }
     }
+}
+
+android {
+    namespace = "com.mobiledeveloper.playzone.mobile.main.api"
 }

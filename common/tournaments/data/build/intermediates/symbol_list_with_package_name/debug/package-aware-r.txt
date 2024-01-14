@@ -1,1 +1,1 @@
-com.mobiledeveloper.playzone_mobile.tournaments.data
+com.mobiledeveloper.playzone.mobile.main.data

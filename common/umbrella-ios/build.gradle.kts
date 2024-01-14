@@ -1,6 +1,5 @@
 plugins {
-    id("multiplatform-setup")
-    id("android-setup")
+    id("multiplatform")
     kotlin("native.cocoapods")
 }
 
@@ -53,4 +52,8 @@ kotlin {
             }
         }
     }
+}
+
+android {
+    namespace = "com.mobiledeveloper.playzone.mobile.umbrella.ios"
 }

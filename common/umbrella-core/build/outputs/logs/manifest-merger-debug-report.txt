@@ -1,25 +1,14 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/mobiledeveloper/Documents/Shared/playzonemobile/common/umbrella-core/src/androidMain/AndroidManifest.xml:2:1-73
-INJECTED from /Users/mobiledeveloper/Documents/Shared/playzonemobile/common/umbrella-core/src/androidMain/AndroidManifest.xml:2:1-73
-INJECTED from /Users/mobiledeveloper/Documents/Shared/playzonemobile/common/umbrella-core/src/androidMain/AndroidManifest.xml:2:1-73
+ADDED from /Users/neuradev/Documents/playzone-mobile/common/umbrella-core/src/androidMain/AndroidManifest.xml:2:1-13
+INJECTED from /Users/neuradev/Documents/playzone-mobile/common/umbrella-core/src/androidMain/AndroidManifest.xml:2:1-13
 	package
-		ADDED from /Users/mobiledeveloper/Documents/Shared/playzonemobile/common/umbrella-core/src/androidMain/AndroidManifest.xml:2:11-70
-		INJECTED from /Users/mobiledeveloper/Documents/Shared/playzonemobile/common/umbrella-core/src/androidMain/AndroidManifest.xml
-		INJECTED from /Users/mobiledeveloper/Documents/Shared/playzonemobile/common/umbrella-core/src/androidMain/AndroidManifest.xml
-	xmlns:android
-		ADDED from /Users/mobiledeveloper/Documents/Shared/playzonemobile/common/umbrella-core/src/androidMain/AndroidManifest.xml:2:1-73
+		INJECTED from /Users/neuradev/Documents/playzone-mobile/common/umbrella-core/src/androidMain/AndroidManifest.xml
 uses-sdk
-INJECTED from /Users/mobiledeveloper/Documents/Shared/playzonemobile/common/umbrella-core/src/androidMain/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/mobiledeveloper/Documents/Shared/playzonemobile/common/umbrella-core/src/androidMain/AndroidManifest.xml
-INJECTED from /Users/mobiledeveloper/Documents/Shared/playzonemobile/common/umbrella-core/src/androidMain/AndroidManifest.xml
-INJECTED from /Users/mobiledeveloper/Documents/Shared/playzonemobile/common/umbrella-core/src/androidMain/AndroidManifest.xml
-INJECTED from /Users/mobiledeveloper/Documents/Shared/playzonemobile/common/umbrella-core/src/androidMain/AndroidManifest.xml
+INJECTED from /Users/neuradev/Documents/playzone-mobile/common/umbrella-core/src/androidMain/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/neuradev/Documents/playzone-mobile/common/umbrella-core/src/androidMain/AndroidManifest.xml
+INJECTED from /Users/neuradev/Documents/playzone-mobile/common/umbrella-core/src/androidMain/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/mobiledeveloper/Documents/Shared/playzonemobile/common/umbrella-core/src/androidMain/AndroidManifest.xml
-		ADDED from /Users/mobiledeveloper/Documents/Shared/playzonemobile/common/umbrella-core/src/androidMain/AndroidManifest.xml
-		INJECTED from /Users/mobiledeveloper/Documents/Shared/playzonemobile/common/umbrella-core/src/androidMain/AndroidManifest.xml
+		INJECTED from /Users/neuradev/Documents/playzone-mobile/common/umbrella-core/src/androidMain/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/mobiledeveloper/Documents/Shared/playzonemobile/common/umbrella-core/src/androidMain/AndroidManifest.xml
-		ADDED from /Users/mobiledeveloper/Documents/Shared/playzonemobile/common/umbrella-core/src/androidMain/AndroidManifest.xml
-		INJECTED from /Users/mobiledeveloper/Documents/Shared/playzonemobile/common/umbrella-core/src/androidMain/AndroidManifest.xml
+		INJECTED from /Users/neuradev/Documents/playzone-mobile/common/umbrella-core/src/androidMain/AndroidManifest.xml

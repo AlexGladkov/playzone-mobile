@@ -1,7 +1,9 @@
 plugins {
-    alias(libs.plugins.kotlin).apply(false)
-    alias(libs.plugins.android).apply(false)
-    alias(libs.plugins.compose).apply(false)
-//    alias(libs.plugins.serialization).apply(false)
-//    alias(libs.plugins.libres).apply(false)
+    id(libs.plugins.kotlin.get().pluginId).apply(false)
+    id(libs.plugins.android.get().pluginId).apply(false)
+    id(libs.plugins.compose.get().pluginId).apply(false)
+    id(libs.plugins.serialization.get().pluginId)
+        .version(libs.plugins.serialization.get().version.requiredVersion)
+        .apply(false)
+//    id(libs.plugins.libres.get().pluginId).apply(false)
 }

@@ -12,7 +12,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
-import coil.transform.CircleCropTransformation
 import home.models.HomeEvent
 import home.models.HomeViewState
 import theme.Theme

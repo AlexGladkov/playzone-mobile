@@ -1,18 +1,21 @@
 plugins {
-    alias(libs.plugins.kotlin)
-    alias(libs.plugins.compose)
+    id("multiplatform")
 }
 
 kotlin {
     sourceSets {
         commonMain {
             dependencies {
-//                api(project(":common:auth:api"))
-//                api(project(":common:games:api"))
-//                api(project(":common:core"))
+                api(project(":common:auth:api"))
+                api(project(":common:games:api"))
+                api(project(":common:core"))
 
-//                implementation(Dependencies.Other.ViewModel.core)
+                implementation(libs.kviewmodel.core)
             }
         }
     }
+}
+
+android {
+    namespace = "com.mobiledeveloper.playzone.mobile.auth.presentation"
 }

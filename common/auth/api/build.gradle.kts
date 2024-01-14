@@ -1,28 +1,13 @@
-import org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension
-
 plugins {
-    alias(libs.plugins.kotlin)
-    alias(libs.plugins.android)
-//    kotlin("plugin.serialization")
+    id("multiplatform")
+    id(libs.plugins.serialization.get().pluginId)
 }
 
 kotlin {
-    defaultTargetsSetup()
-
     sourceSets {
         commonMain {
             dependencies {
-//                implementation(Dependencies.Kotlin.Serialization.serialization)
-            }
-        }
-    }
-}
-
-fun KotlinMultiplatformExtension.defaultTargetsSetup() {
-    androidTarget {
-        compilations.all {
-            kotlinOptions {
-                jvmTarget = "17"
+                implementation(libs.kotlinx.serialization.core)
             }
         }
     }

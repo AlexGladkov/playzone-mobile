@@ -1,51 +1,54 @@
 plugins {
-    id("multiplatform-setup")
-    id("android-setup")
-    kotlin("plugin.serialization")
+    id("multiplatform")
+    id(libs.plugins.kotlin.get().pluginId)
 }
 
 kotlin {
     sourceSets {
         commonMain {
             dependencies {
-                api(Dependencies.Kotlin.Serialization.serialization)
-                api(Dependencies.Kotlin.Coroutines.core)
+                api(libs.kotlinx.serialization.core)
+                api(libs.kotlinx.coroutines)
 
-                api(Dependencies.Ktor.core)
-                implementation(Dependencies.Ktor.json)
-                implementation(Dependencies.Ktor.serialization)
-                implementation(Dependencies.Ktor.negotiation)
-                implementation(Dependencies.Ktor.kotlin_json)
-                implementation(Dependencies.Ktor.logging)
+                api(libs.ktor.client.core)
+                implementation(libs.ktor.client.serialization)
+                implementation(libs.ktor.client.negotiation)
+                implementation(libs.ktor.client.logging)
+                implementation(libs.ktor.client.json)
 
-                implementation(Dependencies.Settings.core)
-                implementation(Dependencies.Settings.noargs)
 
-                api(Dependencies.Kodein.core)
+                implementation(libs.multiplatform.settings.core)
+                implementation(libs.multiplatform.settings.no.arg)
 
-//                api(Dependencies.SqlDelight.core)
+                api(libs.kodein.di)
+
+//                api(libs.sqldelight.sqlite)
             }
         }
 
         androidMain {
             dependencies {
-                implementation(Dependencies.Ktor.android)
-//                implementation(Dependencies.SqlDelight.android)
+                implementation(libs.ktor.client.android)
+//                implementation(libs.sqldelight.android.driver)
             }
         }
 
         iosMain {
             dependencies {
-                implementation(Dependencies.Ktor.ios)
-//                implementation(Dependencies.SqlDelight.ios)
+                implementation(libs.ktor.client.ios)
+//                implementation(libs.sqldelight.native.driver)
             }
         }
 
-        desktopMain {
-            dependencies {
-                implementation(Dependencies.Ktor.okhttp)
+//        desktopMain {
+//            dependencies {
+//                implementation(Dependencies.Ktor.okhttp)
 //                implementation(Dependencies.SqlDelight.desktop)
-            }
-        }
+//            }
+//        }
     }
+}
+
+android {
+    namespace = "com.mobiledeveloper.playzone.mobile.core"
 }

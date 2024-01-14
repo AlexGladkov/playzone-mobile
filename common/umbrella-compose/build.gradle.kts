@@ -1,6 +1,5 @@
 plugins {
-    id("multiplatform-compose-setup")
-    id("android-setup")
+    id("multiplatform")
 }
 
 kotlin {
@@ -17,20 +16,24 @@ kotlin {
                 implementation(project(":common:games:data"))
                 implementation(project(":common:tournaments:data"))
 
-                implementation(Dependencies.Other.ViewModel.core)
-                implementation(Dependencies.Other.ViewModel.compose)
-                implementation(Dependencies.Other.ViewModel.odyssey)
+                implementation(libs.kviewmodel.core)
+                implementation(libs.kviewmodel.compose)
+                implementation(libs.kviewmodel.odyssey)
 
-                implementation(Dependencies.Other.Navigation.compose)
-                implementation(Dependencies.Other.Navigation.core)
+                implementation(libs.odyssey.compose)
+                implementation(libs.odyssey.core)
             }
         }
 
         androidMain {
             dependencies {
                 implementation(project(":common:core-compose"))
-                implementation(Dependencies.Android.composeActivity)
+                implementation(libs.androidx.activity.compose)
             }
         }
     }
+}
+
+android {
+    namespace = "com.mobiledeveloper.playzone.mobile.umbrella.compose"
 }

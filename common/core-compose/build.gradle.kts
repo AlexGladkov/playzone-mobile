@@ -1,4 +1,7 @@
 plugins {
-    id("multiplatform-compose-setup")
-    id("android-setup")
+    id("multiplatform")
+}
+
+android {
+    namespace = "com.mobiledeveloper.playzone.mobile.core.compose"
 }
