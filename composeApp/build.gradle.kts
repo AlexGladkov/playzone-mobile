@@ -4,7 +4,10 @@ plugins {
     id(libs.plugins.android.get().pluginId)
     id(libs.plugins.kotlin.get().pluginId)
     id(libs.plugins.compose.get().pluginId)
+    kotlin("native.cocoapods")
 }
+
+version = "0.0.2"
 
 kotlin {
     androidTarget()
@@ -26,13 +29,45 @@ kotlin {
         }
     }
 
+    cocoapods {
+        summary = "PlayZone iOS SDK"
+        homepage = "https://google.com"
+        ios.deploymentTarget = "14.0"
+        podfile = project.file("../iosApp/Podfile")
+
+        framework {
+            transitiveExport = false
+            baseName = "SharedSDK"
+            export(project(":common:core"))
+            export(project(":common:core-utils"))
+            export(project(":common:auth:api"))
+            export(project(":common:auth:presentation"))
+            export(project(":common:games:api"))
+            export(project(":common:main:api"))
+            export(project(":common:main:presentation"))
+            export(project(":common:umbrella-core"))
+        }
+    }
+
     sourceSets {
 
         commonMain.dependencies {
+            implementation(compose.runtime)
+            implementation(compose.ui)
+            implementation(compose.foundation)
+
+            implementation(libs.odyssey.compose)
+            implementation(libs.odyssey.core)
+
             implementation(project(":common:core"))
+            implementation(project(":common:core-compose"))
             implementation(project(":common:games:api"))
             implementation(project(":common:umbrella-compose"))
             implementation(project(":common:umbrella-core"))
+        }
+
+        jvmMain.dependencies {
+            implementation(compose.desktop.currentOs)
         }
 
         androidMain.dependencies {
@@ -70,7 +105,7 @@ android {
 
 compose.desktop {
     application {
-        mainClass = "MainKt"
+        mainClass = "Main_desktopKt"
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)

@@ -1,5 +1,6 @@
 target 'iosApp' do
   use_frameworks!
   platform :ios, '14.1'
-  pod 'umbrella_ios', :path => '../common/umbrella-ios'
+  pod 'composeApp', :path => '../composeApp'
+  project 'iosApp.xcodeproj'
 end
