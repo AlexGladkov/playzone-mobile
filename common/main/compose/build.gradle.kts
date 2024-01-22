@@ -1,5 +1,12 @@
 plugins {
     id("multiplatform")
+    id(libs.plugins.libres.get().pluginId)
+}
+
+libres {
+    generatedClassName = "MainRes"
+    generateNamedArguments = true
+    baseLocaleLanguageCode = "en"
 }
 
 kotlin {

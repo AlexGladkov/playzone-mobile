@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="auth_login_title">Login Now</string>
+    <string name="auth_login_placeholder">Your login</string>
+    <string name="auth_password_placeholder">Your password</string>
+    <string name="auth_password_description">Password hidden</string>
+    <string name="auth_forgot_password">Forgot Password</string>
+    <string name="auth_welcome">Welcome back to PlayZone! Enter your email address and your password to enjoy the latest features of PlayZone</string>
+</resources>

@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import com.mobiledeveloper.playzone.mobile.main.compose.MainRes
 import search.models.SearchEvent
 import search.models.SearchViewState
 import theme.Theme
@@ -32,7 +33,7 @@ fun SearchView(viewState: SearchViewState, eventHandler: (SearchEvent) -> Unit) 
                 focusedIndicatorColor = Color.Transparent,
                 unfocusedIndicatorColor = Color.Transparent
             ),
-            placeholder = { Text("Search Game", color = Theme.colors.hintTextColor) },
+            placeholder = { Text(MainRes.string.search_hint, color = Theme.colors.hintTextColor) },
             shape = RoundedCornerShape(10.dp),
             onValueChange = {
                 eventHandler.invoke(SearchEvent.QueryChanged(it))

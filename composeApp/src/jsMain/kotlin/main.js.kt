@@ -1,9 +1,10 @@
 import androidx.compose.ui.ExperimentalComposeUiApi
+import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.window.CanvasBasedWindow
-import navigation.navigationGraph
+//import navigation.navigationGraph
 import org.jetbrains.skiko.wasm.onWasmReady
-import ru.alexgladkov.odyssey.compose.setup.OdysseyConfiguration
-import ru.alexgladkov.odyssey.compose.setup.setNavigationContent
+//import ru.alexgladkov.odyssey.compose.setup.OdysseyConfiguration
+//import ru.alexgladkov.odyssey.compose.setup.setNavigationContent
 import theme.AppTheme
 import theme.Theme
 
@@ -12,15 +13,15 @@ fun main() {
     onWasmReady {
         CanvasBasedWindow {
             AppTheme {
-                val configuration = OdysseyConfiguration(
-                    backgroundColor = Theme.colors.primaryBackground
-                )
-
-                setNavigationContent(configuration, onApplicationFinish = {
-
-                }) {
-                    navigationGraph()
-                }
+//                val configuration = OdysseyConfiguration(
+//                    backgroundColor = Theme.colors.primaryBackground
+//                )
+//
+//                setNavigationContent(configuration, onApplicationFinish = {
+//
+//                }) {
+//                    navigationGraph()
+//                }
             }
         }
     }

@@ -1,0 +1,4 @@
+<resources>
+    <string name="profile_welcome">Hello, Profile</string>
+    <string name="search_hint">Search Game</string>
+</resources>

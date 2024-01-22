@@ -1,6 +1,16 @@
 plugins {
     id("multiplatform")
     id(libs.plugins.kotlin.get().pluginId)
+    id(libs.plugins.sqldelight.get().pluginId)
+}
+
+sqldelight {
+    databases {
+        create("Database") {
+            packageName.set("com.mobiledeveloper.playzone")
+            generateAsync.set(true)
+        }
+    }
 }
 
 kotlin {
@@ -20,23 +30,27 @@ kotlin {
             implementation(libs.multiplatform.settings.no.arg)
 
             api(libs.kodein.di)
-
-//                api(libs.sqldelight.sqlite)
         }
 
         androidMain.dependencies {
             implementation(libs.ktor.client.android)
-//                implementation(libs.sqldelight.android.driver)
+            implementation(libs.sqldelight.android.driver)
         }
 
         iosMain.dependencies {
             implementation(libs.ktor.client.ios)
-//                implementation(libs.sqldelight.native.driver)
+            implementation(libs.sqldelight.native.driver)
         }
 
         desktopMain.dependencies {
             implementation(libs.ktor.client.okhttp)
-//            implementation(Dependencies.SqlDelight.desktop)
+            implementation(libs.sqldelight.sqlite.driver)
+        }
+
+        jsMain.dependencies {
+            implementation(libs.sqldelight.js.driver)
+            implementation(npm("sql.js", "1.6.2"))
+            implementation(devNpm("copy-webpack-plugin", "9.1.0"))
         }
     }
 }

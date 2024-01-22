@@ -5,5 +5,5 @@ plugins {
     id(libs.plugins.serialization.get().pluginId)
         .version(libs.plugins.serialization.get().version.requiredVersion)
         .apply(false)
-//    id(libs.plugins.libres.get().pluginId).apply(false)
+    id(libs.plugins.libres.get().pluginId).apply(false)
 }

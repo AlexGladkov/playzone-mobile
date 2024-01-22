@@ -14,7 +14,12 @@ kotlin {
     jvm()
 
     js {
-        browser()
+        moduleName = "composeApp"
+        browser {
+            commonWebpackConfig {
+                outputFileName = "composeApp.js"
+            }
+        }
         binaries.executable()
     }
 
@@ -38,19 +43,22 @@ kotlin {
         framework {
             transitiveExport = false
             baseName = "SharedSDK"
+            isStatic = true
+
             export(project(":common:core"))
+            export(project(":common:core-compose"))
+            export(project(":common:games:api"))
+            export(project(":common:umbrella-core"))
             export(project(":common:core-utils"))
             export(project(":common:auth:api"))
             export(project(":common:auth:presentation"))
             export(project(":common:games:api"))
             export(project(":common:main:api"))
             export(project(":common:main:presentation"))
-            export(project(":common:umbrella-core"))
         }
     }
 
     sourceSets {
-
         commonMain.dependencies {
             implementation(compose.runtime)
             implementation(compose.ui)
@@ -73,6 +81,19 @@ kotlin {
         androidMain.dependencies {
             implementation(libs.androidx.appcompat)
             implementation(libs.androidx.activity.compose)
+        }
+
+        iosMain.dependencies {
+            api(project(":common:core"))
+            api(project(":common:core-compose"))
+            api(project(":common:games:api"))
+            api(project(":common:umbrella-core"))
+            api(project(":common:core-utils"))
+            api(project(":common:auth:api"))
+            api(project(":common:auth:presentation"))
+            api(project(":common:games:api"))
+            api(project(":common:main:api"))
+            api(project(":common:main:presentation"))
         }
     }
 }

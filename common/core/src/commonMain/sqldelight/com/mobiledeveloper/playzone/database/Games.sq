@@ -1,0 +1,4 @@
+CREATE TABLE game (
+  gameId INTEGER PRIMARY KEY NOT NULL,
+  title TEXT NOT NULL
+);

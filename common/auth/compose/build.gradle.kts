@@ -1,5 +1,12 @@
 plugins {
     id("multiplatform")
+    id(libs.plugins.libres.get().pluginId)
+}
+
+libres {
+    generatedClassName = "AuthRes"
+    generateNamedArguments = true
+    baseLocaleLanguageCode = "en"
 }
 
 kotlin {
@@ -16,6 +23,8 @@ kotlin {
 
                 implementation(libs.odyssey.core)
                 implementation(libs.odyssey.compose)
+
+                implementation(libs.libres)
             }
         }
     }

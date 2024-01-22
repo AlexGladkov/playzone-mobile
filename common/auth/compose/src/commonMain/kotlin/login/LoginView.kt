@@ -27,6 +27,8 @@ import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import app.cash.sqldelight.db.QueryResult
+import com.mobiledeveloper.playzone.mobile.auth.compose.AuthRes
 import login.models.LoginEvent
 import login.models.LoginViewState
 import theme.Theme
@@ -38,13 +40,13 @@ fun LoginView(state: LoginViewState, eventHandler: (LoginEvent) -> Unit) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "Login Now", color = Theme.colors.thirdTextColor,
+            text = AuthRes.string.auth_login_title, color = Theme.colors.thirdTextColor,
             fontSize = 24.sp, fontWeight = FontWeight.Bold
         )
 
         Text(
             modifier = Modifier.padding(top = 15.dp),
-            text = "Welcome back to PlayZone! Enter your email address and your password to enjoy the latest features of PlayZone",
+            text = AuthRes.string.auth_welcome,
             fontSize = 14.sp,
             textAlign = TextAlign.Center,
             color = Theme.colors.hintTextColor
@@ -65,7 +67,7 @@ fun LoginView(state: LoginViewState, eventHandler: (LoginEvent) -> Unit) {
                 focusedIndicatorColor = Color.Transparent,
                 unfocusedIndicatorColor = Color.Transparent
             ),
-            placeholder = { Text("Your login", color = Theme.colors.hintTextColor) },
+            placeholder = { Text(AuthRes.string.auth_login_placeholder, color = Theme.colors.hintTextColor) },
             shape = RoundedCornerShape(10.dp),
             onValueChange = {
                 eventHandler.invoke(LoginEvent.EmailChanged(it))
@@ -92,7 +94,7 @@ fun LoginView(state: LoginViewState, eventHandler: (LoginEvent) -> Unit) {
                 VisualTransformation.None
             },
             placeholder = {
-                Text("Your password", color = Theme.colors.hintTextColor)
+                Text(AuthRes.string.auth_password_placeholder, color = Theme.colors.hintTextColor)
             },
             trailingIcon = {
                 Icon(
@@ -104,7 +106,7 @@ fun LoginView(state: LoginViewState, eventHandler: (LoginEvent) -> Unit) {
                     } else {
                         Icons.Outlined.Lock
                     },
-                    contentDescription = "Password hidden",
+                    contentDescription = AuthRes.string.auth_password_description,
                     tint = Theme.colors.hintTextColor
                 )
             },
@@ -120,7 +122,7 @@ fun LoginView(state: LoginViewState, eventHandler: (LoginEvent) -> Unit) {
 
             Text(
                 modifier = Modifier.clickable { eventHandler.invoke(LoginEvent.ForgotClick) },
-                text = "Forgot Password", color = Theme.colors.primaryAction,
+                text = AuthRes.string.auth_forgot_password, color = Theme.colors.primaryAction,
                 fontSize = 12.sp
             )
         }
@@ -140,7 +142,7 @@ fun LoginView(state: LoginViewState, eventHandler: (LoginEvent) -> Unit) {
                 eventHandler.invoke(LoginEvent.LoginClick)
             }) {
             Text(
-                "Login Now", color = Theme.colors.primaryTextColor,
+                AuthRes.string.auth_login_title, color = Theme.colors.primaryTextColor,
                 fontSize = 16.sp, fontWeight = FontWeight.Bold
             )
         }

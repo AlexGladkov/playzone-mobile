@@ -8,6 +8,10 @@ import theme.Theme
 
 fun MainViewController(): UIViewController =
     ComposeUIViewController {
+        PlatformSDK.init(
+            configuration = PlatformConfiguration()
+        )
+
         AppTheme {
             val configuration = OdysseyConfiguration(
                 backgroundColor = Theme.colors.primaryBackground

@@ -2,6 +2,7 @@ package navigation
 
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import com.mobiledeveloper.playzone.mobile.main.compose.MainRes
 import home.HomeScreen
 import navigation.tabs.*
 import ru.alexgladkov.odyssey.compose.extensions.bottomNavigation
@@ -21,7 +22,7 @@ fun RootComposeBuilder.mainFlow() {
             }
 
             screen(name = NavigationTree.Main.Profile.name) {
-                Text("Hello, Profile")
+                Text(MainRes.string.profile_welcome)
             }
         }
 
