@@ -1,6 +1,5 @@
 plugins {
     id("multiplatform-setup")
-    id("android-setup")
 }
 
 kotlin {
@@ -14,8 +13,12 @@ kotlin {
                 implementation(project(":common:games:data"))
                 implementation(project(":common:tournaments:data"))
 
-                implementation(Dependencies.Kodein.core)
+//                implementation(Dependencies.Kodein.core)
             }
         }
     }
+}
+
+android {
+    namespace ="com.mobiledeveloper.playzone_mobile.umbrella.core"
 }

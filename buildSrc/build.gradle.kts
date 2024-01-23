@@ -10,11 +10,11 @@ repositories {
 }
 
 dependencies {
-    implementation(Dependencies.Kotlin.gradlePlugin)
-    implementation(Dependencies.Compose.gradlePlugin)
-    implementation(Dependencies.Android.gradlePlugin)
-    implementation(Dependencies.Kotlin.Serialization.gradlePlugin)
-    implementation(Dependencies.SqlDelight.gradlePlugin)
+    implementation(libs.plugin.android)
+    implementation(libs.plugin.kotlin)
+    implementation(libs.plugin.compose)
+    implementation(libs.plugin.serialization)
+//    implementation(Dependencies.SqlDelight.gradlePlugin)
 }
 
 kotlin {

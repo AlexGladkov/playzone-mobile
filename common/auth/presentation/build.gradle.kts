@@ -1,6 +1,5 @@
 plugins {
     id("multiplatform-setup")
-    id("android-setup")
 }
 
 kotlin {
@@ -11,8 +10,12 @@ kotlin {
                 api(project(":common:games:api"))
                 api(project(":common:core"))
 
-                implementation(Dependencies.Other.ViewModel.core)
+                implementation(libs.kviewmodel.core)
             }
         }
     }
+}
+
+android {
+    namespace ="com.mobiledeveloper.playzone_mobile.auth.presentation"
 }

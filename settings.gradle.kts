@@ -3,11 +3,20 @@ pluginManagement {
         google()
         gradlePluginPortal()
         mavenCentral()
+        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
+    }
+}
+
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
     }
 }
 
 rootProject.name = "playzone-mobile"
-include(":androidApp")
+include(":composeApp")
 include(":common:auth:api")
 include(":common:auth:presentation")
 include(":common:auth:data")

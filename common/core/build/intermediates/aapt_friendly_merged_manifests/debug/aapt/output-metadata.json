@@ -4,7 +4,7 @@
     "type": "AAPT_FRIENDLY_MERGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "com.mobiledeveloper.playzone_mobile.core",
+  "applicationId": "com.mobiledeveloper.playzone_mobile.common.core",
   "variantName": "debug",
   "elements": [
     {

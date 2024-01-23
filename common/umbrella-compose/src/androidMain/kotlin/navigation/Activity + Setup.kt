@@ -9,6 +9,8 @@ import ru.alexgladkov.odyssey.compose.extensions.setupWithActivity
 import ru.alexgladkov.odyssey.compose.local.LocalRootController
 import ru.alexgladkov.odyssey.compose.navigation.RootComposeBuilder
 import ru.alexgladkov.odyssey.compose.navigation.modal_navigation.ModalNavigator
+import ru.alexgladkov.odyssey.compose.navigation.modal_navigation.configuration.DefaultModalConfiguration
+import ru.alexgladkov.odyssey.core.configuration.DisplayType
 import theme.AppTheme
 import theme.Theme
 
@@ -25,7 +27,7 @@ fun ComponentActivity.setupThemedNavigation() {
             CompositionLocalProvider(
                 LocalRootController provides rootController
             ) {
-                ModalNavigator {
+                ModalNavigator(configuration = DefaultModalConfiguration(backgroundColor, DisplayType.EdgeToEdge)) {
                     Navigator(startScreen = NavigationTree.Splash.SplashScreen.name)
                 }
             }

@@ -1,15 +1,16 @@
 plugins {
     id("multiplatform-setup")
-    id("android-setup")
-    kotlin("plugin.serialization")
+    id(libs.plugins.serialization.get().pluginId)
 }
 
 kotlin {
     sourceSets {
-        commonMain {
-            dependencies {
-                implementation(Dependencies.Kotlin.Serialization.serialization)
-            }
+        commonMain.dependencies {
+            implementation(libs.kotlinx.serialization.core)
         }
     }
+}
+
+android {
+    namespace = "com.mobiledeveloper.playzone_mobile.auth.api"
 }
