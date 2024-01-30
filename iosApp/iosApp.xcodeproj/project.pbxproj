@@ -28,6 +28,7 @@
 		974E45A828F1895200D2E524 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974E45A728F1895200D2E524 /* HomeView.swift */; };
 		974E45AA28F18B9E00D2E524 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974E45A928F18B9E00D2E524 /* SearchView.swift */; };
 		97FBE6A528F16D8000EA6A9C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FBE6A428F16D8000EA6A9C /* LoginView.swift */; };
+		FA07BCDA2B68F96300F86176 /* Main + SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BCD92B68F96300F86176 /* Main + SwiftUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		97FBE6A428F16D8000EA6A9C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C5158C774ED7C353EA82825A /* Pods-iosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.release.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.release.xcconfig"; sourceTree = "<group>"; };
 		C8595C49980529214EDAD514 /* Pods-iosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.debug.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.debug.xcconfig"; sourceTree = "<group>"; };
+		FA07BCD92B68F96300F86176 /* Main + SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main + SwiftUI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
+				FA07BCD82B68F94700F86176 /* Bindings */,
 				974E458728F1733100D2E524 /* Views */,
 				974E458428F1710E00D2E524 /* Utils */,
 				97FBE6A228F16D6300EA6A9C /* Screens */,
@@ -218,6 +221,14 @@
 				974E459028F17DDF00D2E524 /* LoginScreen.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		FA07BCD82B68F94700F86176 /* Bindings */ = {
+			isa = PBXGroup;
+			children = (
+				FA07BCD92B68F96300F86176 /* Main + SwiftUI.swift */,
+			);
+			path = Bindings;
 			sourceTree = "<group>";
 		};
 		FE95650239BEA99803C0B9F6 /* Pods */ = {
@@ -379,6 +390,7 @@
 				974E459728F180A100D2E524 /* ForgotScreen.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
 				974E458B28F1775000D2E524 /* ActionButton.swift in Sources */,
+				FA07BCDA2B68F96300F86176 /* Main + SwiftUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
