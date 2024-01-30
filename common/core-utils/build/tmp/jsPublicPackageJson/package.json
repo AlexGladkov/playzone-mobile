@@ -1,0 +1,13 @@
+{
+  "name": "playzone-mobile-common-core-utils",
+  "version": "0.0.0-unspecified",
+  "main": "playzone-mobile-common-core-utils.js",
+  "types": "playzone-mobile-common-core-utils.d.ts",
+  "devDependencies": {},
+  "dependencies": {
+    "format-util": "^1.0.5"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}

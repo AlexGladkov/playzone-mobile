@@ -1,16 +1,16 @@
 PODS:
-  - umbrella_ios (0.0.1)
+  - composeApp (0.0.1)
 
 DEPENDENCIES:
-  - umbrella_ios (from `../common/umbrella-ios`)
+  - composeApp (from `../composeApp`)
 
 EXTERNAL SOURCES:
-  umbrella_ios:
-    :path: "../common/umbrella-ios"
+  composeApp:
+    :path: "../composeApp"
 
 SPEC CHECKSUMS:
-  umbrella_ios: 788dd06cb6b2f10eb53cdbfb4394ceddc9cd56a6
+  composeApp: 31e7ce2308613263c719638ba6f74564e42e9aa1
 
-PODFILE CHECKSUM: 31f5bae033e590f50c091d6ebe8556deab37b7e3
+PODFILE CHECKSUM: 183a0659f51063138f504d22b54a9077c1acc92d
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.14.3

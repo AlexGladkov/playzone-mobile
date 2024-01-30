@@ -1,0 +1,20 @@
+{
+  "name": "playzone-mobile-common-core",
+  "version": "0.0.0-unspecified",
+  "main": "playzone-mobile-common-core.js",
+  "types": "playzone-mobile-common-core.d.ts",
+  "devDependencies": {
+    "copy-webpack-plugin": "9.1.0"
+  },
+  "dependencies": {
+    "sql.js": "1.6.2",
+    "@cashapp/sqldelight-sqljs-worker": "2.0.1",
+    "node-fetch": "2.6.7",
+    "abort-controller": "3.0.0",
+    "ws": "8.5.0",
+    "format-util": "^1.0.5"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}

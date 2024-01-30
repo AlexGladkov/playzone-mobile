@@ -1,0 +1,10 @@
+abi_version=1.8.0
+builtins_platform=JS
+compiler_version=1.9.22
+depends=playzone-mobile.common.auth\:api playzone-mobile.common.games\:api playzone-mobile.common\:core org.jetbrains.compose.material\:material org.jetbrains.compose.material\:material-ripple org.jetbrains.compose.foundation\:foundation org.jetbrains.compose.animation\:animation org.jetbrains.compose.material\:material-icons-core org.jetbrains.compose.foundation\:foundation-layout org.jetbrains.compose.ui\:ui org.jetbrains.compose.runtime\:runtime-saveable org.jetbrains.compose.runtime\:runtime com.adeo\:kviewmodel io.ktor\:ktor-client-core app.cash.sqldelight\:runtime app.cash.sqldelight\:async-extensions org.jetbrains.compose.ui\:ui-text org.jetbrains.compose.ui\:ui-graphics org.jetbrains.skiko\:skiko org.jetbrains.compose.animation\:animation-core io.ktor\:ktor-events io.ktor\:ktor-websocket-serialization io.ktor\:ktor-serialization io.ktor\:ktor-websockets io.ktor\:ktor-http org.jetbrains.compose.ui\:ui-unit org.jetbrains.compose.ui\:ui-geometry org.jetbrains.compose.ui\:ui-util io.ktor\:ktor-utils io.ktor\:ktor-io org.jetbrains.kotlinx\:kotlinx-coroutines-core org.jetbrains.kotlinx\:atomicfu org.jetbrains.kotlin\:kotlin-dom-api-compat org.jetbrains.kotlinx\:kotlinx-serialization-core org.kodein.di\:kodein-di org.kodein.type\:kaverit kotlin
+ir_signature_versions=1,2
+jsOutputName=playzone-mobile-common-auth-presentation
+metadata_version=1.4.1
+serializedIrFileFingerprints=1obkmo00au706.19dv6c1vzvpal 3sitkorierjja.8n43lo6c39eg 936vunsa6rxv.1m499aekwpy3l avgkbtryc60h.3tzcn95pbrgoh
+serializedKlibFingerprint=2luens9yjgd2o.iifw7i0dphb1
+unique_name=playzone-mobile.common.auth\:presentation

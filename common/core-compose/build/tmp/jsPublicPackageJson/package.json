@@ -1,0 +1,13 @@
+{
+  "name": "playzone-mobile-common-core-compose",
+  "version": "0.0.0-unspecified",
+  "main": "playzone-mobile-common-core-compose.js",
+  "types": "playzone-mobile-common-core-compose.d.ts",
+  "devDependencies": {},
+  "dependencies": {
+    "format-util": "^1.0.5"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}

@@ -1,8 +1,8 @@
 package ktor
 
 import io.ktor.client.engine.*
-import io.ktor.client.engine.android.*
+import io.ktor.client.engine.js.Js
 
 internal actual class HttpEngineFactory actual constructor() {
-    actual fun createEngine(): HttpClientEngineFactory<HttpClientEngineConfig> = Android
+    actual fun createEngine(): HttpClientEngineFactory<HttpClientEngineConfig> = Js
 }

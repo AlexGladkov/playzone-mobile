@@ -1,19 +1,19 @@
 [versions]
 # Plugins
 plugin-android = "8.1.4" # https://developer.android.com/studio/releases/gradle-plugin
-plugin-compose = "1.5.11" # https://github.com/JetBrains/compose-jb
+plugin-compose = "1.6.0-beta01" # https://github.com/JetBrains/compose-jb
 
 # Multiplatform
-kotlin = "1.9.21"
+kotlin = "1.9.22"
 coroutines = "1.7.3"
 serialization = "1.5.1"
 libres = "1.2.2"
 ktor = "2.3.5"
 
 # Libraries
-odyssey = "1.3.40"
-kviewmodel = "0.14"
-sqldelight = "2.0.0-alpha05"
+odyssey = "1.3.50"
+kviewmodel = "0.17"
+sqldelight = "2.0.1"
 settings = "1.0.0"
 coil = "2.3.0"
 androidx-appcompat = "1.6.1"
@@ -27,6 +27,8 @@ plugin-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.
 plugin-android = { module = "com.android.tools.build:gradle", version.ref = "plugin-android" }
 plugin-compose = { module = "org.jetbrains.compose:compose-gradle-plugin", version.ref = "plugin-compose" }
 plugin-serialization = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin" }
+plugin-sqldelight = { module = "app.cash.sqldelight:gradle-plugin", version.ref = "sqldelight" }
+plugin-libres = { module = "io.github.skeptick.libres:gradle-plugin", version.ref = "libres" }
 
 ktor-client-android = { module = "io.ktor:ktor-client-android", version.ref = "ktor" }
 ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
@@ -43,10 +45,10 @@ kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serializa
 
 kotlinx-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
 
-sqldelight-coroutines-extensions = { module = "com.squareup.sqldelight:coroutines-extensions", version.ref = "sqldelight" }
-sqldelight-android-driver = { module = "com.squareup.sqldelight:android-driver", version.ref = "sqldelight" }
-sqldelight-native-driver = { module = "com.squareup.sqldelight:native-driver", version.ref = "sqldelight" }
-sqldelight-sqlite-driver = { module = "com.squareup.sqldelight:sqlite-driver", version.ref = "sqldelight" }
+sqldelight-android-driver = { module = "app.cash.sqldelight:android-driver", version.ref = "sqldelight" }
+sqldelight-native-driver = { module = "app.cash.sqldelight:native-driver", version.ref = "sqldelight" }
+sqldelight-sqlite-driver = { module = "app.cash.sqldelight:sqlite-driver", version.ref = "sqldelight" }
+sqldelight-js-driver = { module = "app.cash.sqldelight:web-worker-driver", version.ref = "sqldelight" }
 
 multiplatform-settings-core = { module = "com.russhwolf:multiplatform-settings", version.ref = "settings" }
 multiplatform-settings-no-arg = { module = "com.russhwolf:multiplatform-settings-no-arg", version.ref = "settings" }
@@ -77,4 +79,6 @@ android = { id = "com.android.application", version.ref = "plugin-android" }
 kotlin = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 compose = { id = "org.jetbrains.compose", version.ref = "plugin-compose" }
+sqldelight = { id = "app.cash.sqldelight", version.ref = "sqldelight" }
 libres = { id = "io.github.skeptick.libres", version.ref = "libres" }
+cocoapods = { id = "org.jetbrains.kotlin.native.cocoapods" }

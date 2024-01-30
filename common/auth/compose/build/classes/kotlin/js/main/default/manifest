@@ -1,0 +1,10 @@
+abi_version=1.8.0
+builtins_platform=JS
+compiler_version=1.9.22
+depends=playzone-mobile.common.auth\:presentation playzone-mobile.common\:core-compose playzone-mobile.common\:core-utils libres\:libres-core org.jetbrains.compose.material\:material org.jetbrains.compose.material\:material-ripple org.jetbrains.compose.foundation\:foundation org.jetbrains.compose.animation\:animation org.jetbrains.compose.material\:material-icons-core org.jetbrains.compose.foundation\:foundation-layout org.jetbrains.compose.ui\:ui org.jetbrains.compose.runtime\:runtime-saveable org.jetbrains.compose.runtime\:runtime playzone-mobile.common.auth\:api playzone-mobile.common.games\:api playzone-mobile.common\:core com.adeo\:kviewmodel-compose com.adeo\:kviewmodel-odyssey com.adeo\:kviewmodel io.github.alexgladkov\:odyssey-core io.github.alexgladkov\:odyssey-compose org.jetbrains.compose.ui\:ui-text org.jetbrains.compose.ui\:ui-graphics org.jetbrains.skiko\:skiko org.jetbrains.compose.animation\:animation-core io.ktor\:ktor-client-core app.cash.sqldelight\:runtime app.cash.sqldelight\:async-extensions org.jetbrains.compose.ui\:ui-unit org.jetbrains.compose.ui\:ui-geometry org.jetbrains.compose.ui\:ui-util io.ktor\:ktor-events io.ktor\:ktor-websocket-serialization io.ktor\:ktor-serialization io.ktor\:ktor-websockets io.ktor\:ktor-http io.ktor\:ktor-utils io.ktor\:ktor-io org.jetbrains.kotlinx\:kotlinx-coroutines-core org.jetbrains.kotlinx\:atomicfu org.jetbrains.kotlin\:kotlin-dom-api-compat org.jetbrains.kotlinx\:kotlinx-serialization-core org.kodein.di\:kodein-di org.kodein.type\:kaverit kotlin
+ir_signature_versions=1,2
+jsOutputName=playzone-mobile-common-auth-compose
+metadata_version=1.4.1
+serializedIrFileFingerprints=10reux348e7bs.6j456a4r93yg 3cbi598h9h906.2mp1kufqrtq60 31vmd14mgdblr.34wwenh6pxxd2 3j14vfubb0zi2.39xnv89kleyej 3113n4n98wzik.1lc1ito9qd3qk 39s7s8cy8iyim.1m834l7h445ve 1iee4kvhb9r63.gfbr82xvucjd 2irzi1s6k0y1u.2xeyvyqnjuyjd 1kvl0jhvq501y.1nk8fqzszocz
+serializedKlibFingerprint=22lntts6ctfm5.16fgqluu5ycp
+unique_name=playzone-mobile.common.auth\:compose

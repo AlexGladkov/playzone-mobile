@@ -1,0 +1,12 @@
+CREATE TABLE game (
+    gameId INTEGER PRIMARY KEY NOT NULL,
+    title TEXT NOT NULL
+);
+
+insert:
+INSERT INTO game(gameId, title)
+VALUES (?, ?);
+
+selectAll:
+SELECT *
+FROM game;

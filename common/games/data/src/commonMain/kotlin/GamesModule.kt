@@ -8,7 +8,7 @@ val gamesModule = DI.Module("gamesModule") {
     }
 
     bind<SqlDelightGamesDataSource>() with provider {
-        SqlDelightGamesDataSource()
+        SqlDelightGamesDataSource(instance())
     }
 
     bind<GamesRepository>() with singleton {

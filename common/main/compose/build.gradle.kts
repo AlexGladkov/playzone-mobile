@@ -1,5 +1,6 @@
 plugins {
     id("multiplatform-setup")
+    id(libs.plugins.libres.get().pluginId)
 }
 
 kotlin {

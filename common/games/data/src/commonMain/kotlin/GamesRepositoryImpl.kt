@@ -13,6 +13,7 @@ class GamesRepositoryImpl(
     }
 
     override suspend fun searchGame(query: String): List<Game> {
+        localDataSource.test()
         return remoteDataSource.searchGame(query).map { it.mapToGame() }
     }
 }

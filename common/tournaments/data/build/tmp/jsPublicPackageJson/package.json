@@ -1,0 +1,13 @@
+{
+  "name": "playzone-mobile-common-tournaments-data",
+  "version": "0.0.0-unspecified",
+  "main": "playzone-mobile-common-tournaments-data.js",
+  "types": "playzone-mobile-common-tournaments-data.d.ts",
+  "devDependencies": {},
+  "dependencies": {
+    "format-util": "^1.0.5"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}

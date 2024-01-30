@@ -1,0 +1,10 @@
+abi_version=1.8.0
+builtins_platform=JS
+compiler_version=1.9.22
+depends=playzone-mobile.common.main\:presentation playzone-mobile.common\:core-compose playzone-mobile.common\:core-utils libres\:libres-core org.jetbrains.compose.material\:material org.jetbrains.compose.material\:material-ripple org.jetbrains.compose.foundation\:foundation org.jetbrains.compose.animation\:animation org.jetbrains.compose.material\:material-icons-core org.jetbrains.compose.foundation\:foundation-layout org.jetbrains.compose.ui\:ui org.jetbrains.compose.runtime\:runtime-saveable org.jetbrains.compose.runtime\:runtime playzone-mobile.common.auth\:api playzone-mobile.common.games\:api playzone-mobile.common\:core com.adeo\:kviewmodel-compose com.adeo\:kviewmodel-odyssey com.adeo\:kviewmodel io.github.alexgladkov\:odyssey-core io.github.alexgladkov\:odyssey-compose org.jetbrains.compose.ui\:ui-text org.jetbrains.compose.ui\:ui-graphics org.jetbrains.skiko\:skiko org.jetbrains.compose.animation\:animation-core io.ktor\:ktor-client-core app.cash.sqldelight\:runtime app.cash.sqldelight\:async-extensions org.jetbrains.compose.ui\:ui-unit org.jetbrains.compose.ui\:ui-geometry org.jetbrains.compose.ui\:ui-util io.ktor\:ktor-events io.ktor\:ktor-websocket-serialization io.ktor\:ktor-serialization io.ktor\:ktor-websockets io.ktor\:ktor-http io.ktor\:ktor-utils io.ktor\:ktor-io org.jetbrains.kotlinx\:kotlinx-coroutines-core org.jetbrains.kotlinx\:atomicfu org.jetbrains.kotlin\:kotlin-dom-api-compat org.jetbrains.kotlinx\:kotlinx-serialization-core org.kodein.di\:kodein-di org.kodein.type\:kaverit kotlin
+ir_signature_versions=1,2
+jsOutputName=playzone-mobile-common-main-compose
+metadata_version=1.4.1
+serializedIrFileFingerprints=19etqbtgbnt0s.vvyqwd0th78r 157nc8n8r5a4v.339wddptvohj9 36jrqnvez23jv.3gxf9fuwfr69a y15yy7nwle62.3bf2ny8z69x3x 26n3enkb2xbu1.1l64kzq7605dw 1lqpqi5twpq5i.3ks5nyh2v5lnu 1ykhemwb8tozh.dlwj9gkjecr7 1i8i5dxmcpyfv.15kqv5z06o7jk 23nbc69z0i1u8.fdxsxzqamvuv loixeksr65vf.15pp5t1kubjri 1tf8vw6tdsfl5.qr6y0io62e3p
+serializedKlibFingerprint=13qfbjtsrffr1.1o4czduwc5qw7
+unique_name=playzone-mobile.common.main\:compose
