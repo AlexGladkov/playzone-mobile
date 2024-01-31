@@ -17,6 +17,8 @@ import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import desktop.LocalAppSettings
+import desktop.WindowState
 import login.models.LoginEvent
 import login.models.LoginViewState
 import theme.Theme
@@ -72,6 +74,8 @@ fun LoginView(state: LoginViewState, eventHandler: (LoginEvent) -> Unit) {
 
         Spacer(modifier = Modifier.height(30.dp))
 
+        val appSettings = LocalAppSettings.current
+
         Button(
             modifier = Modifier
                 .fillMaxWidth()
@@ -82,7 +86,8 @@ fun LoginView(state: LoginViewState, eventHandler: (LoginEvent) -> Unit) {
             enabled = !state.isSending,
             shape = RoundedCornerShape(10.dp),
             onClick = {
-                eventHandler.invoke(LoginEvent.LoginClick)
+//                eventHandler.invoke(LoginEvent.LoginClick)
+                appSettings.updateWindowState(WindowState.Maximized)
             }) {
             Text(
                 "Login Now", color = Theme.colors.primaryTextColor,
