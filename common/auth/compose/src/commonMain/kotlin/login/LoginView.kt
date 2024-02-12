@@ -17,6 +17,7 @@ import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.mobiledeveloper.playzone_mobile.auth.compose.AuthRes
 import login.models.LoginEvent
 import login.models.LoginViewState
 import theme.Theme
@@ -42,75 +43,30 @@ fun LoginView(state: LoginViewState, eventHandler: (LoginEvent) -> Unit) {
 
         Spacer(modifier = Modifier.height(50.dp))
 
-        TextField(
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(56.dp),
-            value = state.email,
-            enabled = !state.isSending,
-            colors = TextFieldDefaults.textFieldColors(
-                backgroundColor = Color(0xFF1F2430),
-                textColor = Color(0xFF696C75),
-                cursorColor = Theme.colors.highlightTextColor,
-                focusedIndicatorColor = Color.Transparent,
-                unfocusedIndicatorColor = Color.Transparent
-            ),
-            placeholder = { Text("Your login", color = Theme.colors.hintTextColor) },
-            shape = RoundedCornerShape(10.dp),
-            onValueChange = {
+        LoginInputView(
+            email = state.email,
+            password = state.password,
+            isSending = state.isSending,
+            isPasswordHidden = state.passwordHidden,
+            onEmailChanged = {
                 eventHandler.invoke(LoginEvent.EmailChanged(it))
-            })
-
-        Spacer(modifier = Modifier.height(24.dp))
-
-        TextField(
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(56.dp),
-            value = state.password,
-            enabled = !state.isSending,
-            colors = TextFieldDefaults.textFieldColors(
-                backgroundColor = Color(0xFF1F2430),
-                textColor = Color(0xFF696C75),
-                cursorColor = Theme.colors.highlightTextColor,
-                focusedIndicatorColor = Color.Transparent,
-                unfocusedIndicatorColor = Color.Transparent
-            ),
-            visualTransformation = if (state.passwordHidden) {
-                PasswordVisualTransformation()
-            } else {
-                VisualTransformation.None
             },
-            placeholder = {
-                Text("Your password", color = Theme.colors.hintTextColor)
-            },
-            trailingIcon = {
-                Icon(
-                    modifier = Modifier.clickable {
-                        eventHandler.invoke(LoginEvent.PasswordShowClick)
-                    },
-                    imageVector = if (state.passwordHidden) {
-                        Icons.Outlined.Clear
-                    } else {
-                        Icons.Outlined.Lock
-                    },
-                    contentDescription = "Password hidden",
-                    tint = Theme.colors.hintTextColor
-                )
-            },
-            shape = RoundedCornerShape(10.dp),
-            onValueChange = {
+            onPasswordChanged = {
                 eventHandler.invoke(LoginEvent.PasswordChanged(it))
-            })
+            },
+            onShowPasswordClicked = {
+                eventHandler.invoke(LoginEvent.PasswordShowClick)
+            }
+        )
 
         Spacer(modifier = Modifier.height(30.dp))
 
-        Row(modifier = Modifier.fillMaxWidth()){
+        Row(modifier = Modifier.fillMaxWidth()) {
             Spacer(modifier = Modifier.weight(1f))
 
             Text(
                 modifier = Modifier.clickable { eventHandler.invoke(LoginEvent.ForgotClick) },
-                text = "Forgot Password", color = Theme.colors.primaryAction,
+                text = AuthRes.string.auth_forgot_password, color = Theme.colors.primaryAction,
                 fontSize = 12.sp
             )
         }

@@ -3,6 +3,12 @@ plugins {
     id(libs.plugins.libres.get().pluginId)
 }
 
+libres {
+    generatedClassName = "AuthRes"
+    generateNamedArguments = true
+    baseLocaleLanguageCode = "en"
+}
+
 kotlin {
     sourceSets {
         commonMain {
