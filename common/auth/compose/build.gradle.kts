@@ -13,9 +13,9 @@ kotlin {
     sourceSets {
         commonMain {
             dependencies {
-                implementation(project(":common:auth:presentation"))
-                implementation(project(":common:core-compose"))
-                implementation(project(":common:core-utils"))
+                implementation(projects.common.auth.presentation)
+                implementation(projects.common.coreCompose)
+                implementation(projects.common.coreUtils)
 
                 implementation(libs.kviewmodel.core)
                 implementation(libs.kviewmodel.compose)

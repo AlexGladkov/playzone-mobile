@@ -6,8 +6,8 @@ kotlin {
     sourceSets {
         commonMain {
             dependencies {
-                api(project(":common:games:api"))
-                implementation(project(":common:core"))
+                api(projects.common.games.api)
+                implementation(projects.common.core)
             }
         }
     }

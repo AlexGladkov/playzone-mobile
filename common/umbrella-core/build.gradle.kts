@@ -6,14 +6,11 @@ kotlin {
     sourceSets {
         commonMain {
             dependencies {
-                implementation(project(":common:core"))
-                implementation(project(":common:core-utils"))
-
-                implementation(project(":common:auth:data"))
-                implementation(project(":common:games:data"))
-                implementation(project(":common:tournaments:data"))
-
-//                implementation(Dependencies.Kodein.core)
+                implementation(projects.common.core)
+                implementation(projects.common.coreUtils)
+                implementation(projects.common.auth.data)
+                implementation(projects.common.games.data)
+                implementation(projects.common.tournaments.data)
             }
         }
     }

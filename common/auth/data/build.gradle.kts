@@ -7,8 +7,8 @@ kotlin {
     sourceSets {
         commonMain {
             dependencies {
-                implementation(project(":common:auth:api"))
-                implementation(project(":common:core"))
+                implementation(projects.common.auth.api)
+                implementation(projects.common.core)
 
                 implementation(libs.kodein.di)
                 implementation(libs.multiplatform.settings.core)
