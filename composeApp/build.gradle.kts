@@ -45,14 +45,14 @@ kotlin {
         framework {
             transitiveExport = false
             baseName = "SharedSDK"
-            export(project(":common:core"))
-            export(project(":common:core-utils"))
-            export(project(":common:auth:api"))
-            export(project(":common:auth:presentation"))
-            export(project(":common:games:api"))
-            export(project(":common:main:api"))
-            export(project(":common:main:presentation"))
-            export(project(":common:umbrella-core"))
+            export(projects.common.core)
+            export(projects.common.coreUtils)
+            export(projects.common.auth.api)
+            export(projects.common.auth.presentation)
+            export(projects.common.games.api)
+            export(projects.common.main.api)
+            export(projects.common.main.presentation)
+            export(projects.common.umbrellaCore)
         }
     }
 
@@ -78,13 +78,13 @@ kotlin {
             implementation(libs.kviewmodel.compose)
             implementation(libs.kviewmodel.odyssey)
 
-            implementation(project(":common:core"))
-            implementation(project(":common:core-compose"))
-            implementation(project(":common:core-utils"))
-            implementation(project(":common:auth:compose"))
-            implementation(project(":common:main:compose"))
-            implementation(project(":common:games:api"))
-            implementation(project(":common:umbrella-core"))
+            implementation(projects.common.core)
+            implementation(projects.common.coreCompose)
+            implementation(projects.common.coreUtils)
+            implementation(projects.common.auth.compose)
+            implementation(projects.common.main.compose)
+            implementation(projects.common.games.api)
+            implementation(projects.common.umbrellaCore)
         }
 
         jvmMain.dependencies {
@@ -97,14 +97,14 @@ kotlin {
         }
 
         iosMain.dependencies {
-            api(project(":common:core"))
-            api(project(":common:core-utils"))
-            api(project(":common:auth:api"))
-            api(project(":common:auth:presentation"))
-            api(project(":common:games:api"))
-            api(project(":common:main:api"))
-            api(project(":common:main:presentation"))
-            api(project(":common:umbrella-core"))
+            api(projects.common.core)
+            api(projects.common.coreUtils)
+            api(projects.common.auth.api)
+            api(projects.common.auth.presentation)
+            api(projects.common.games.api)
+            api(projects.common.main.api)
+            api(projects.common.main.presentation)
+            api(projects.common.umbrellaCore)
         }
 
         jsMain.dependencies {

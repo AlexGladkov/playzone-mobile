@@ -6,9 +6,9 @@ kotlin {
     sourceSets {
         commonMain {
             dependencies {
-                api(project(":common:auth:api"))
-                api(project(":common:games:api"))
-                api(project(":common:core"))
+                api(projects.common.auth.api)
+                api(projects.common.games.api)
+                api(projects.common.core)
 
                 implementation(libs.kviewmodel.core)
             }
